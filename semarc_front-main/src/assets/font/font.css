@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'YouSheBiaoTiHei';
+    src: url("YouSheBiaoTiHei-2.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WeiRuanYaHei';
+    src: url("WeiRuanYaHei.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RuiZiDianFengHeiTi';
+    src: url("RuiZiDianFengHeiTi.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuZhouZhongHeiTi';
+    src: url("木舟中黑字体.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ruizilongshuchiheichaocu';
+    src: url("ruizilongshuchiheichaocu.ttf");
+    font-weight: normal;
+    font-style: normal;
+}

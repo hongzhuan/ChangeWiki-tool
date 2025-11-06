@@ -1,0 +1,70 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@kangc/v-md-editor": "^1.4.4",
+    "ant-design-vue": "^1.7.8",
+    "axios": "^1.7.8",
+    "core-js": "^3.8.3",
+    "cytoscape": "^3.30.4",
+    "cytoscape-fcose": "^2.2.0",
+    "dom-to-image": "^2.6.0",
+    "echarts": "^5.5.1",
+    "element-ui": "^2.15.14",
+    "file-saver": "^2.0.5",
+    "github-markdown-css": "^5.8.1",
+    "highlight.js": "^11.11.1",
+    "html2canvas": "^1.4.1",
+    "markdown-it": "^14.1.0",
+    "marked": "^15.0.7",
+    "mermaid": "^9.4.3",
+    "papaparse": "^5.4.1",
+    "plantuml-encoder": "^1.4.0",
+    "prismjs": "^1.29.0",
+    "serve": "^14.2.4",
+    "socket.io-client": "^4.8.1",
+    "vue": "^2.6.14",
+    "vue-code-diff": "^1.2.0",
+    "vue-markdown": "^2.2.4",
+    "vue-router": "^3.6.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

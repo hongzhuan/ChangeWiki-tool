@@ -1,0 +1,3179 @@
+{
+    "structure": [
+        {
+            "id": 0,
+            "name": "Utility",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "Utility",
+            "Functionality": "wu"
+        },
+        {
+            "id": 1,
+            "name": "Test",
+            "category": "cluster",
+            "parentId": 0,
+            "qualifiedName": "Utility.Test",
+            "Functionality": "wu"
+        },
+        {
+            "id": 2,
+            "name": "Utility",
+            "category": "cluster",
+            "parentId": 0,
+            "qualifiedName": "Utility.Utility",
+            "Functionality": "wu"
+        },
+        {
+            "id": 3,
+            "name": "I/O_Loop",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "I/O_Loop",
+            "Functionality": "wu"
+        },
+        {
+            "id": 4,
+            "name": "Network_I/O",
+            "category": "cluster",
+            "parentId": 3,
+            "qualifiedName": "I/O_Loop.Network_I/O",
+            "Functionality": "wu"
+        },
+        {
+            "id": 5,
+            "name": "uv_io_t",
+            "category": "cluster",
+            "parentId": 3,
+            "qualifiedName": "I/O_Loop.uv_io_t",
+            "Functionality": "wu"
+        },
+        {
+            "id": 6,
+            "name": "epoll",
+            "category": "cluster",
+            "parentId": 3,
+            "qualifiedName": "I/O_Loop.epoll",
+            "Functionality": "wu"
+        },
+        {
+            "id": 7,
+            "name": "kqueue",
+            "category": "cluster",
+            "parentId": 3,
+            "qualifiedName": "I/O_Loop.kqueue",
+            "Functionality": "wu"
+        },
+        {
+            "id": 8,
+            "name": "event_ports",
+            "category": "cluster",
+            "parentId": 3,
+            "qualifiedName": "I/O_Loop.event_ports",
+            "Functionality": "wu"
+        },
+        {
+            "id": 9,
+            "name": "IOCP",
+            "category": "cluster",
+            "parentId": 3,
+            "qualifiedName": "I/O_Loop.IOCP",
+            "Functionality": "wu"
+        },
+        {
+            "id": 10,
+            "name": "File_I/O",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "File_I/O",
+            "Functionality": "wu"
+        },
+        {
+            "id": 11,
+            "name": "Thread_Pool_Management",
+            "category": "cluster",
+            "parentId": 10,
+            "qualifiedName": "File_I/O.Thread_Pool_Management",
+            "Functionality": "wu"
+        },
+        {
+            "id": 12,
+            "name": "File_I/O",
+            "category": "cluster",
+            "parentId": 10,
+            "qualifiedName": "File_I/O.File_I/O",
+            "Functionality": "wu"
+        },
+        {
+            "id": 13,
+            "name": "DNS_Ops",
+            "category": "cluster",
+            "parentId": 10,
+            "qualifiedName": "File_I/O.DNS_Ops",
+            "Functionality": "wu"
+        },
+        {
+            "id": 14,
+            "name": "docs/code/cgi/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/cgi/main.c",
+            "Functionality": "Implements a basic CGI server using libuv that listens for TCP connections and executes CGI scripts. It handles server setup, connection management, and request handling."
+        },
+        {
+            "id": 15,
+            "name": "docs/code/interfaces/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/interfaces/main.c",
+            "Functionality": "Retrieves and prints network interface information, including names and IP addresses, using libuv's file system capabilities."
+        },
+        {
+            "id": 16,
+            "name": "docs/code/multi-echo-server/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/multi-echo-server/main.c",
+            "Functionality": "Implements a multi-process echo server using libuv, where the main process listens for connections and distributes them to worker processes."
+        },
+        {
+            "id": 17,
+            "name": "docs/code/multi-echo-server/worker.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/multi-echo-server/worker.c",
+            "Functionality": "Defines the worker process logic for handling client connections in a multi-process echo server, including reading and writing data to clients."
+        },
+        {
+            "id": 18,
+            "name": "docs/code/pipe-echo-server/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/pipe-echo-server/main.c",
+            "Functionality": "Creates a simple echo server using named pipes, where it receives data from clients and echoes it back, leveraging libuv for I/O operations."
+        },
+        {
+            "id": 19,
+            "name": "docs/code/tcp-echo-server/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/tcp-echo-server/main.c",
+            "Functionality": "Implements a simple TCP echo server using libuv. It listens for incoming connections on a specified port, echoes received data back to clients, and handles errors such as connection failures and read/write errors."
+        },
+        {
+            "id": 20,
+            "name": "docs/code/tty/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/tty/main.c",
+            "Functionality": "Uses libuv to perform operations on the terminal. It initializes a TTY handle for standard output, sets it to normal mode, and may set terminal colors or other properties based on the terminal type."
+        },
+        {
+            "id": 21,
+            "name": "docs/code/tty-gravity/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/tty-gravity/main.c",
+            "Functionality": "Displays a scrolling message in the terminal using libuv. It sets up an asynchronous event loop to update the terminal display with a moving message."
+        },
+        {
+            "id": 22,
+            "name": "docs/code/udp-dhcp/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.docs/code/udp-dhcp/main.c",
+            "Functionality": "Implements a basic UDP DHCP client using libuv. The client sends a DHCP Discover message to request an IP address and handles the DHCP server's response."
+        },
+        {
+            "id": 23,
+            "name": "src/unix/bsd-ifaddrs.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/bsd-ifaddrs.c",
+            "Functionality": "Implements functions to obtain and manage network interface address information using BSD-specific APIs like getifaddrs."
+        },
+        {
+            "id": 24,
+            "name": "src/unix/getaddrinfo.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/getaddrinfo.c"
+        },
+        {
+            "id": 25,
+            "name": "src/unix/getnameinfo.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/getnameinfo.c"
+        },
+        {
+            "id": 26,
+            "name": "src/unix/signal.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/signal.c",
+            "Functionality": "Handles signal management on Unix-like systems, including initialization, starting, and stopping signal watchers. It uses a red-black tree for managing active signal watchers and ensures thread safety."
+        },
+        {
+            "id": 27,
+            "name": "src/unix/stream.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/stream.c",
+            "Functionality": "Manages stream operations, including initialization, reading, and writing. It supports network and IPC streams on Unix systems, providing a unified interface for stream-based communication."
+        },
+        {
+            "id": 28,
+            "name": "src/unix/tcp.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/tcp.c",
+            "Functionality": "Implements TCP socket operations, including creating, binding, connecting, and managing TCP connections. It provides cross-platform support for TCP networking on Unix systems."
+        },
+        {
+            "id": 29,
+            "name": "src/unix/udp.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.src/unix/udp.c",
+            "Functionality": "Manages UDP socket operations, including creating, binding, sending, and receiving UDP packets. It provides support for UDP communication on Unix platforms."
+        },
+        {
+            "id": 30,
+            "name": "test/benchmark-ping-pongs.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/benchmark-ping-pongs.c",
+            "Functionality": "Implements a benchmark for UDP ping-pong functionality, measuring the number of pings processed in a set timeframe."
+        },
+        {
+            "id": 31,
+            "name": "test/benchmark-ping-udp.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/benchmark-ping-udp.c",
+            "Functionality": "Tests the performance of sending and receiving UDP pings, evaluating the efficiency of the UDP implementation in libuv."
+        },
+        {
+            "id": 32,
+            "name": "test/benchmark-multi-accept.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/benchmark-multi-accept.c",
+            "Functionality": "Measures the performance of accepting multiple TCP connections simultaneously in a libuv-based server environment."
+        },
+        {
+            "id": 33,
+            "name": "test/benchmark-tcp-write-batch.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/benchmark-tcp-write-batch.c",
+            "Functionality": "This file benchmarks the performance of batch TCP write operations by measuring throughput and latency while sending a high volume of TCP packets."
+        },
+        {
+            "id": 34,
+            "name": "test/benchmark-udp-pummel.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/benchmark-udp-pummel.c",
+            "Functionality": "This file benchmarks UDP performance by measuring the throughput and latency of sending and receiving a large number of UDP packets."
+        },
+        {
+            "id": 35,
+            "name": "test/blackhole-server.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/blackhole-server.c",
+            "Functionality": "This file implements a simple TCP server that accepts connections and discards incoming data, effectively acting as a 'blackhole' to test connection handling and throughput."
+        },
+        {
+            "id": 36,
+            "name": "test/echo-server.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/echo-server.c",
+            "Functionality": "This file implements a network echo server that receives data from clients and sends it back, useful for testing and validating basic TCP/UDP communication functionality."
+        },
+        {
+            "id": 37,
+            "name": "test/test-callback-stack.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-callback-stack.c",
+            "Functionality": "Checks the call stack of callback functions in various asynchronous operations to ensure that they are invoked in the correct order and with the expected parameters."
+        },
+        {
+            "id": 38,
+            "name": "test/test-close-fd.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-close-fd.c",
+            "Functionality": "Tests the behavior of file descriptor closure in libuv by creating a pipe, performing operations, and ensuring that the file descriptor can be closed correctly while handling subsequent read operations."
+        },
+        {
+            "id": 39,
+            "name": "test/test-close-order.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-close-order.c",
+            "Functionality": "Ensures that handles are closed in the expected order by setting up multiple handles and verifying that callbacks and handles are cleaned up in a precise sequence."
+        },
+        {
+            "id": 40,
+            "name": "test/test-connect-unspecified.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-connect-unspecified.c",
+            "Functionality": "Validates the behavior of TCP connections to unspecified addresses (`0.0.0.0` and `::`), ensuring that connection attempts do not fail and are handled correctly by libuv."
+        },
+        {
+            "id": 41,
+            "name": "test/test-connection-fail.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-connection-fail.c",
+            "Functionality": "Tests handling of TCP connection failures by attempting connections to non-existent ports and verifying that error handling and resource cleanup are performed as expected."
+        },
+        {
+            "id": 42,
+            "name": "test/test-delayed-accept.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-delayed-accept.c",
+            "Functionality": "Checks the behavior of delayed acceptance of TCP connections by simulating scenarios where connections are accepted after a delay, validating the correctness of the acceptance mechanism."
+        },
+        {
+            "id": 43,
+            "name": "test/test-eintr-handling.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-eintr-handling.c",
+            "Functionality": "Validates handling of `EINTR` errors during asynchronous I/O operations by simulating signal interruptions and verifying that libuv correctly handles these interruptions and resumes operations."
+        },
+        {
+            "id": 44,
+            "name": "test/test-embed.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-embed.c",
+            "Functionality": "Tests the integration of libuv within a larger application by embedding the event loop and verifying that asynchronous operations and event handling work correctly in an embedded context."
+        },
+        {
+            "id": 45,
+            "name": "test/test-emfile.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-emfile.c",
+            "Functionality": "Checks the behavior of libuv when the system file descriptor limit is reached, ensuring that operations correctly handle `EMFILE` errors and that resources are managed properly."
+        },
+        {
+            "id": 46,
+            "name": "test/test-fork.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-fork.c",
+            "Functionality": "This file tests the behavior of libuv's asynchronous operations in conjunction with process forking, ensuring that timers, sockets, and other features function correctly in child processes."
+        },
+        {
+            "id": 47,
+            "name": "test/test-ipc.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-ipc.c",
+            "Functionality": "General IPC testing using libuv, including both TCP and pipe-based communication. Tests handle creation, data transfer, and error conditions."
+        },
+        {
+            "id": 48,
+            "name": "test/test-ipc-send-recv.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-ipc-send-recv.c",
+            "Functionality": "Validates IPC functionality for sending and receiving handles across pipes and TCP sockets, ensuring proper handle passing and communication."
+        },
+        {
+            "id": 49,
+            "name": "test/test-ipc-heavy-traffic-deadlock-bug.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-ipc-heavy-traffic-deadlock-bug.c",
+            "Functionality": "Tests IPC mechanisms under heavy traffic to identify and prevent potential deadlocks, ensuring robust and reliable data transfer between processes."
+        },
+        {
+            "id": 50,
+            "name": "test/test-multiple-listen.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-multiple-listen.c",
+            "Functionality": "Tests the ability of a TCP server to listen on multiple addresses. It validates that the server can handle multiple listening sockets correctly and manages connections from different sources."
+        },
+        {
+            "id": 51,
+            "name": "test/test-not-readable-nor-writable-on-read-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-not-readable-nor-writable-on-read-error.c",
+            "Functionality": "Checks the behavior of a TCP client when a read error occurs. It ensures that the client socket is correctly marked as not readable or writable after a read error."
+        },
+        {
+            "id": 52,
+            "name": "test/test-not-writable-after-shutdown.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-not-writable-after-shutdown.c",
+            "Functionality": "Tests that a TCP socket is correctly marked as non-writable after a shutdown operation. It verifies that no further write operations are allowed after the socket has been shut down."
+        },
+        {
+            "id": 53,
+            "name": "test/test-pipe-server-close.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-pipe-server-close.c",
+            "Functionality": "Checks the behavior of closing a server pipe and its associated client connections, ensuring proper resource cleanup and that callbacks are executed as expected."
+        },
+        {
+            "id": 54,
+            "name": "test/test-pipe-set-fchmod.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-pipe-set-fchmod.c",
+            "Functionality": "Validates the use of `uv_pipe_chmod` to set file mode permissions on pipes, ensuring that permission changes are applied correctly."
+        },
+        {
+            "id": 55,
+            "name": "test/test-pipe-set-non-blocking.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-pipe-set-non-blocking.c",
+            "Functionality": "Tests the non-blocking behavior of pipes, ensuring that operations such as reads and writes do not block and handle non-blocking I/O correctly."
+        },
+        {
+            "id": 56,
+            "name": "test/test-platform-output.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-platform-output.c",
+            "Functionality": "Outputs platform-specific information, typically for debugging purposes, and verifies that the platform details are correctly reported."
+        },
+        {
+            "id": 57,
+            "name": "test/test-poll-close-doesnt-corrupt-stack.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-poll-close-doesnt-corrupt-stack.c",
+            "Functionality": "Ensures that closing a `uv_poll_t` handle does not corrupt the stack, focusing on stack integrity after handle closure on Windows platforms."
+        },
+        {
+            "id": 58,
+            "name": "test/test-poll-close.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-poll-close.c",
+            "Functionality": "Tests the closing behavior of `uv_poll_t` handles, ensuring that handles are properly closed and resources are cleaned up without errors."
+        },
+        {
+            "id": 59,
+            "name": "test/test-poll-closesocket.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-poll-closesocket.c",
+            "Functionality": "Verifies that closing a socket while monitored by `uv_poll_t` does not cause stack corruption or other issues, focusing on the interaction between socket closures and poll handles."
+        },
+        {
+            "id": 60,
+            "name": "test/test-poll-multiple-handles.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-poll-multiple-handles.c",
+            "Functionality": "Tests handling multiple `uv_poll_t` handles on the same socket, ensuring correct management and behavior of multiple poll handles."
+        },
+        {
+            "id": 61,
+            "name": "test/test-poll-oob.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-poll-oob.c",
+            "Functionality": "Tests handling of Out-Of-Band (OOB) data on TCP connections, ensuring that OOB data is processed correctly alongside regular data."
+        },
+        {
+            "id": 62,
+            "name": "test/test-poll.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-poll.c",
+            "Functionality": "Provides a comprehensive test of `uv_poll_t` functionality for monitoring file descriptors, ensuring that poll handles operate correctly under various conditions."
+        },
+        {
+            "id": 63,
+            "name": "test/test-semaphore.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-semaphore.c",
+            "Functionality": "Tests semaphore and mutex functionality in libuv. It verifies that synchronization primitives work correctly in a multi-threaded environment."
+        },
+        {
+            "id": 64,
+            "name": "test/test-shutdown-close.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-shutdown-close.c",
+            "Functionality": "Tests the behavior of libuv handles when shutdown and close operations are performed. It ensures that shutdown callbacks are called appropriately and that handles are properly closed."
+        },
+        {
+            "id": 65,
+            "name": "test/test-shutdown-eof.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-shutdown-eof.c",
+            "Functionality": "Tests the handling of end-of-file (EOF) situations during shutdown of libuv TCP connections. It verifies that the EOF is handled correctly and that the connection behaves as expected after shutdown."
+        },
+        {
+            "id": 66,
+            "name": "test/test-shutdown-simultaneous.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-shutdown-simultaneous.c",
+            "Functionality": "Tests the behavior of libuv when simultaneous shutdown operations are performed on a TCP connection. It ensures that multiple shutdown requests are managed correctly without causing issues."
+        },
+        {
+            "id": 67,
+            "name": "test/test-shutdown-twice.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-shutdown-twice.c",
+            "Functionality": "Tests the behavior of libuv when `uv_shutdown` is called twice on the same handle. It verifies that the second shutdown call does not lead to errors and that only one shutdown callback is executed."
+        },
+        {
+            "id": 68,
+            "name": "test/test-tcp-alloc-cb-fail.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-alloc-cb-fail.c",
+            "Functionality": "Verifies that `libuv` correctly handles TCP allocation failures by simulating memory allocation issues and checking if appropriate error codes are processed."
+        },
+        {
+            "id": 69,
+            "name": "test/test-tcp-bind-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-bind-error.c",
+            "Functionality": "Tests error handling for TCP binding operations, including scenarios like address in use, address not available, and invalid arguments."
+        },
+        {
+            "id": 70,
+            "name": "test/test-tcp-bind6-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-bind6-error.c",
+            "Functionality": "Similar to `test/test-tcp-bind-error.c`, but specifically tests error scenarios for IPv6 TCP binding."
+        },
+        {
+            "id": 71,
+            "name": "test/test-tcp-close-accept.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-close-accept.c",
+            "Functionality": "Tests the behavior of TCP connection closing and acceptance, ensuring proper handling of multiple connections and correct cleanup after closing."
+        },
+        {
+            "id": 72,
+            "name": "test/test-tcp-close-after-read-timeout.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-close-after-read-timeout.c",
+            "Functionality": "Checks the handling of TCP connection closure after a read timeout, verifying that the library properly handles timeouts and connection cleanup."
+        },
+        {
+            "id": 73,
+            "name": "test/test-tcp-close-reset.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-close-reset.c",
+            "Functionality": "Tests TCP connection reset scenarios, ensuring that the library correctly handles connection resets and resource cleanup."
+        },
+        {
+            "id": 74,
+            "name": "test/test-tcp-close-while-connecting.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-close-while-connecting.c",
+            "Functionality": "Tests the handling of closing a TCP connection during the connection process, verifying that errors are handled correctly and no unexpected behavior occurs."
+        },
+        {
+            "id": 75,
+            "name": "test/test-tcp-close.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-close.c",
+            "Functionality": "Verifies the behavior of closing TCP connections, ensuring that connections are properly closed and that no lingering write requests remain."
+        },
+        {
+            "id": 76,
+            "name": "test/test-tcp-connect-error-after-write.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-connect-error-after-write.c",
+            "Functionality": "Tests the error handling of TCP connection attempts after a write operation, ensuring that the library correctly reports and manages connection errors."
+        },
+        {
+            "id": 77,
+            "name": "test/test-tcp-connect-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-connect-error.c",
+            "Functionality": "Tests the handling of connection errors, particularly focusing on scenarios where connection attempts to invalid addresses should correctly return errors."
+        },
+        {
+            "id": 78,
+            "name": "test/test-tcp-connect-timeout.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-connect-timeout.c",
+            "Functionality": "Tests the timeout behavior for TCP connections, verifying that the library correctly handles connection timeouts and does not hang the event loop."
+        },
+        {
+            "id": 79,
+            "name": "test/test-tcp-connect6-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-connect6-error.c",
+            "Functionality": "Tests the behavior of the TCP connection when attempting to connect to an invalid IPv6 address, including error handling and ensuring the connection callback does not get invoked incorrectly."
+        },
+        {
+            "id": 80,
+            "name": "test/test-tcp-create-socket-early.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-create-socket-early.c",
+            "Functionality": "Validates the scenario of creating a TCP socket early in the connection process and checks proper handling of socket options."
+        },
+        {
+            "id": 81,
+            "name": "test/test-tcp-flags.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-flags.c",
+            "Functionality": "Tests TCP socket flags such as disabling Nagle's algorithm and enabling keep-alive, ensuring they are set correctly and behave as expected."
+        },
+        {
+            "id": 82,
+            "name": "test/test-tcp-oob.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-oob.c",
+            "Functionality": "Validates the ability to send and receive out-of-band data over a TCP connection, ensuring out-of-band functionality works correctly."
+        },
+        {
+            "id": 83,
+            "name": "test/test-tcp-open.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-open.c",
+            "Functionality": "Tests the opening of a TCP socket and various error scenarios such as opening it multiple times or connecting with an already open socket."
+        },
+        {
+            "id": 84,
+            "name": "test/test-tcp-read-stop-start.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-read-stop-start.c",
+            "Functionality": "Validates the ability to stop and start reading on a TCP stream, ensuring that data can be correctly read after resuming read operations."
+        },
+        {
+            "id": 85,
+            "name": "test/test-tcp-read-stop.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-read-stop.c",
+            "Functionality": "Tests stopping the read operation on a TCP handle and ensures that no data is read after stop is called."
+        },
+        {
+            "id": 86,
+            "name": "test/test-tcp-rst.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-rst.c",
+            "Functionality": "Tests the behavior of the TCP connection when a reset (RST) packet is received, ensuring that the connection handles this situation properly without crashing."
+        },
+        {
+            "id": 87,
+            "name": "test/test-tcp-shutdown-after-write.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-shutdown-after-write.c",
+            "Functionality": "Validates the proper behavior of a TCP connection when shutting down after a write operation, ensuring that the shutdown sequence does not result in any unexpected behavior."
+        },
+        {
+            "id": 88,
+            "name": "test/test-tcp-try-write-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-try-write-error.c",
+            "Functionality": "Tests the error handling behavior of a TCP write operation when the connection is already closed, ensuring that appropriate errors are returned and handled."
+        },
+        {
+            "id": 89,
+            "name": "test/test-tcp-try-write.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-try-write.c",
+            "Functionality": "Tests writing data to a TCP connection, ensuring that data is written correctly and that the write operations are queued and processed as expected."
+        },
+        {
+            "id": 90,
+            "name": "test/test-tcp-unexpected-read.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-unexpected-read.c",
+            "Functionality": "Validates the behavior of a TCP socket when unexpected read operations are attempted, ensuring that they are handled gracefully."
+        },
+        {
+            "id": 91,
+            "name": "test/test-tcp-write-after-connect.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-after-connect.c",
+            "Functionality": "Tests the behavior of writing data immediately after a successful connection, verifying that the data is sent correctly in the expected order."
+        },
+        {
+            "id": 92,
+            "name": "test/test-tcp-write-fail.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-fail.c",
+            "Functionality": "Validates the behavior of write operations when facing simulated failures, ensuring that errors are reported and handled correctly."
+        },
+        {
+            "id": 93,
+            "name": "test/test-tcp-write-queue-order.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-queue-order.c",
+            "Functionality": "Tests the order of queued write operations on a TCP socket, ensuring that data is sent in the correct sequence regardless of simultaneous write requests."
+        },
+        {
+            "id": 94,
+            "name": "test/test-tcp-write-to-half-open-connection.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-to-half-open-connection.c",
+            "Functionality": "Tests writing to a half-open TCP connection, ensuring that the write operation is either handled correctly or fails as expected."
+        },
+        {
+            "id": 95,
+            "name": "test/test-tcp-writealot.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-writealot.c",
+            "Functionality": "Tests TCP networking aspects in libuv by sending a large volume of data over TCP connections, focusing on error handling and connection management."
+        },
+        {
+            "id": 96,
+            "name": "test/test-tty-duplicate-key.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tty-duplicate-key.c",
+            "Functionality": "Tests the handling of duplicate key inputs in TTY (terminal) operations for Windows, ensuring keyboard input is processed correctly."
+        },
+        {
+            "id": 97,
+            "name": "test/test-tcp-write-after-connect.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-after-connect.c",
+            "Functionality": "Tests the behavior of writing data immediately after a successful connection, verifying that the data is sent correctly in the expected order."
+        },
+        {
+            "id": 98,
+            "name": "test/test-tcp-write-fail.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-fail.c",
+            "Functionality": "Validates the behavior of write operations when facing simulated failures, ensuring that errors are reported and handled correctly."
+        },
+        {
+            "id": 99,
+            "name": "test/test-tcp-write-queue-order.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-queue-order.c",
+            "Functionality": "Tests the order of queued write operations on a TCP socket, ensuring that data is sent in the correct sequence regardless of simultaneous write requests."
+        },
+        {
+            "id": 100,
+            "name": "test/test-tcp-write-to-half-open-connection.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-write-to-half-open-connection.c",
+            "Functionality": "Tests writing to a half-open TCP connection, ensuring that the write operation is either handled correctly or fails as expected."
+        },
+        {
+            "id": 101,
+            "name": "test/test-tcp-writealot.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-writealot.c",
+            "Functionality": "Tests TCP networking aspects in libuv by sending a large volume of data over TCP connections, focusing on error handling and connection management."
+        },
+        {
+            "id": 102,
+            "name": "test/test-tcp-rst.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-rst.c",
+            "Functionality": "Tests the behavior of the TCP connection when a reset (RST) packet is received, ensuring that the connection handles this situation properly without crashing."
+        },
+        {
+            "id": 103,
+            "name": "test/test-tcp-shutdown-after-write.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-shutdown-after-write.c",
+            "Functionality": "Validates the proper behavior of a TCP connection when shutting down after a write operation, ensuring that the shutdown sequence does not result in any unexpected behavior."
+        },
+        {
+            "id": 104,
+            "name": "test/test-tcp-try-write-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-try-write-error.c",
+            "Functionality": "Tests the error handling behavior of a TCP write operation when the connection is already closed, ensuring that appropriate errors are returned and handled."
+        },
+        {
+            "id": 105,
+            "name": "test/test-tcp-try-write.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-try-write.c",
+            "Functionality": "Tests writing data to a TCP connection, ensuring that data is written correctly and that the write operations are queued and processed as expected."
+        },
+        {
+            "id": 106,
+            "name": "test/test-tcp-unexpected-read.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tcp-unexpected-read.c",
+            "Functionality": "Validates the behavior of a TCP socket when unexpected read operations are attempted, ensuring that they are handled gracefully."
+        },
+        {
+            "id": 107,
+            "name": "test/test-tty-escape-sequence-processing.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tty-escape-sequence-processing.c",
+            "Functionality": "Tests the handling of escape sequences in terminal input for Windows, ensuring correct processing of control characters."
+        },
+        {
+            "id": 108,
+            "name": "test/test-tty.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-tty.c",
+            "Functionality": "Validates the core TTY functionalities in libuv by testing events, data handling, and proper management of TTY handles."
+        },
+        {
+            "id": 109,
+            "name": "test/test-udp-alloc-cb-fail.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-alloc-cb-fail.c",
+            "Functionality": "Tests UDP functionality by simulating a failure in the allocation callback to verify proper error handling in UDP communications."
+        },
+        {
+            "id": 110,
+            "name": "test/test-udp-bind.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-bind.c",
+            "Functionality": "Tests the binding behavior of UDP sockets in libuv, ensuring that the sockets can correctly bind to addresses and handle address reuse."
+        },
+        {
+            "id": 111,
+            "name": "test/test-udp-connect.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-connect.c",
+            "Functionality": "Tests the UDP connecting process in libuv, validating the sending and receiving of UDP messages between client and server."
+        },
+        {
+            "id": 112,
+            "name": "test/test-udp-connect6.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-connect6.c",
+            "Functionality": "Tests UDP connection capabilities over IPv6, ensuring proper data sending and receiving functionalities."
+        },
+        {
+            "id": 113,
+            "name": "test/test-udp-create-socket-early.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-create-socket-early.c",
+            "Functionality": "Validates the creation of UDP sockets in various scenarios, focusing on early socket creation without binding, and checks for proper error handling."
+        },
+        {
+            "id": 114,
+            "name": "test/test-udp-dgram-too-big.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-dgram-too-big.c",
+            "Functionality": "Tests the handling of oversized UDP datagrams to ensure that proper errors are raised and the library behaves as expected when encountering issues with data size."
+        },
+        {
+            "id": 115,
+            "name": "test/test-udp-ipv6.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-ipv6.c",
+            "Functionality": "Verifies the functionality of UDP operations specifically under IPv6 conditions, ensuring that messages are correctly sent and received."
+        },
+        {
+            "id": 116,
+            "name": "test/test-udp-mmsg.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-mmsg.c",
+            "Functionality": "Tests the use of recvmmsg for efficient reception of multiple UDP messages in a single call, focusing on performance and correct message handling."
+        },
+        {
+            "id": 117,
+            "name": "test/test-udp-multicast-interface.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-multicast-interface.c",
+            "Functionality": "Evaluates the ability to bind to a specific network interface for multicast operations, ensuring that multicast packets are properly received."
+        },
+        {
+            "id": 118,
+            "name": "test/test-udp-multicast-interface6.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-multicast-interface6.c",
+            "Functionality": "Similar to the multicast interface test but specifically designed for IPv6, validating multicast operations in an IPv6 environment."
+        },
+        {
+            "id": 119,
+            "name": "test/test-udp-multicast-join.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-multicast-join.c",
+            "Functionality": "Tests the functionality of joining a multicast group, ensuring that UDP packets sent to the group are properly received by the joining socket."
+        },
+        {
+            "id": 120,
+            "name": "test/test-udp-multicast-join6.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-multicast-join6.c",
+            "Functionality": "Similar to the multicast join test but for IPv6, ensuring that the joining behavior works correctly in an IPv6 multicast environment."
+        },
+        {
+            "id": 121,
+            "name": "test/test-udp-multicast-ttl.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-multicast-ttl.c",
+            "Functionality": "Tests the setting and behavior of the Time-To-Live (TTL) for multicast packets, ensuring packets are sent and received with the correct TTL settings."
+        },
+        {
+            "id": 122,
+            "name": "test/test-udp-open.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-open.c",
+            "Functionality": "Evaluates the process of opening and reusing UDP sockets, checking for correct behavior when attempting to open sockets under various conditions."
+        },
+        {
+            "id": 123,
+            "name": "test/test-udp-options.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-options.c",
+            "Functionality": "Tests the options available for UDP sockets, ensuring that socket options like multicast loopback, broadcast settings, and others are functioning correctly."
+        },
+        {
+            "id": 124,
+            "name": "test/test-udp-send-and-recv.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-send-and-recv.c",
+            "Functionality": "Tests the basic send and receive functionality of UDP sockets, verifying that messages are correctly sent and received between a client and server setup."
+        },
+        {
+            "id": 125,
+            "name": "test/test-udp-send-hang-loop.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-send-hang-loop.c",
+            "Functionality": "test/test-udp-send-hang-loop.c"
+        },
+        {
+            "id": 126,
+            "name": "test/test-udp-send-immediate.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-send-immediate.c",
+            "Functionality": "Tests immediate send behavior for UDP packets, ensuring that messages sent without delay are processed as intended without buffering issues."
+        },
+        {
+            "id": 127,
+            "name": "test/test-udp-send-unreachable.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-send-unreachable.c",
+            "Functionality": "Evaluates the library's handling of sending packets to unreachable addresses, making sure that appropriate error handling and callbacks are executed."
+        },
+        {
+            "id": 128,
+            "name": "test/test-udp-sendmmsg-error.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-sendmmsg-error.c",
+            "Functionality": "This file tests the error handling capabilities of UDP data sending using the libuv library. It specifically checks that when attempting to send messages to a target that refuses connection, error handling is performed correctly. The file includes functions for socket initialization, sending multiple datagrams, and validating that the appropriate error codes are returned."
+        },
+        {
+            "id": 129,
+            "name": "test/test-udp-try-send.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-udp-try-send.c",
+            "Functionality": "This file tests the basic functionality of sending and receiving UDP messages using the libuv library. It includes the initialization of a UDP server, the sending of multiple messages from a client, and checks for correct error responses in scenarios such as sending data larger than the buffer size. The implementation ensures proper handling of message receipts and closure of UDP handles."
+        },
+        {
+            "id": 130,
+            "name": "test/test-watcher-cross-stop.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network_I/O.test/test-watcher-cross-stop.c",
+            "Functionality": "This file is designed to test the behavior of multiple UDP sockets during sending and receiving operations, particularly addressing the correct handling during the closure of these sockets. It checks that all callbacks related to sending and receiving data are invoked appropriately, ensuring that the library functions correctly when managing multiple simultaneous UDP handles."
+        },
+        {
+            "id": 131,
+            "name": "include/uv.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv.h",
+            "Functionality": "Serves as the primary header for the libuv library, defining essential data structures and function prototypes for asynchronous I/O, thread management, and event loops, making the library cross-platform."
+        },
+        {
+            "id": 132,
+            "name": "include/uv/aix.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/aix.h",
+            "Functionality": "Contains platform-specific definitions and data structures required by libuv for AIX environments, ensuring compatibility and support for AIX features."
+        },
+        {
+            "id": 133,
+            "name": "include/uv/bsd.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/bsd.h",
+            "Functionality": "Defines macros and structures specific to BSD systems to enable support for various event notification mechanisms and file system operations within libuv."
+        },
+        {
+            "id": 134,
+            "name": "include/uv/darwin.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/darwin.h",
+            "Functionality": "Provides platform-specific definitions for macOS, including necessary imports and functionality for handling events and system calls specific to macOS."
+        },
+        {
+            "id": 135,
+            "name": "include/uv/errno.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/errno.h",
+            "Functionality": "Defines error codes and related macros by including standard errno definitions, supporting error handling within libuv."
+        },
+        {
+            "id": 136,
+            "name": "include/uv/linux.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/linux.h",
+            "Functionality": "Contains definitions and macros for Linux platform support, including specific structures for event handling and system calls in the Linux environment."
+        },
+        {
+            "id": 137,
+            "name": "include/uv/os390.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/os390.h",
+            "Functionality": "Defines platform-specific fields and structures for IBM OS/390 systems, ensuring that the libuv library can operate correctly in that environment."
+        },
+        {
+            "id": 138,
+            "name": "include/uv/posix.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/posix.h",
+            "Functionality": "Defines POSIX-specific functionality and types, ensuring compatibility and feature support across POSIX-compliant systems."
+        },
+        {
+            "id": 139,
+            "name": "include/uv/stdint-msvc2008.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/stdint-msvc2008.h",
+            "Functionality": "Provides a compatibility layer for standard integer types when using Microsoft Visual Studio 2008, defining types such as int32_t, uint64_t, etc."
+        },
+        {
+            "id": 140,
+            "name": "include/uv/threadpool.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/threadpool.h",
+            "Functionality": "Defines a thread pool interface for handling asynchronous work, providing a mechanism to manage parallel tasks efficiently within libuv."
+        },
+        {
+            "id": 141,
+            "name": "include/uv/tree.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/tree.h",
+            "Functionality": "Implements data structures for splay trees and red-black trees, offering efficient management of dynamically sized data sets in libuv."
+        },
+        {
+            "id": 142,
+            "name": "include/uv/unix.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/unix.h",
+            "Functionality": "Provides Unix-specific definitions and includes for file handling, process management, and other system calls compatible with Unix-like operating systems."
+        },
+        {
+            "id": 143,
+            "name": "include/uv/version.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/version.h",
+            "Functionality": "Defines macros for the versioning of libuv, helping in maintaining compatibility and providing version information."
+        },
+        {
+            "id": 144,
+            "name": "include/uv/win.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.include/uv/win.h",
+            "Functionality": "Includes definitions and structures specific to the Windows platform, facilitating integration with Windows APIs for file and network operations."
+        },
+        {
+            "id": 145,
+            "name": "src/uv-common.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/uv-common.h",
+            "Functionality": "Includes common definitions and macros used across different platforms within the libuv library, providing platform-independent functionality and utilities."
+        },
+        {
+            "id": 146,
+            "name": "src/unix/darwin-stub.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/darwin-stub.h",
+            "Functionality": "Provides stubs and definitions for Darwin (macOS) specific functionality, including system calls and data structures relevant to macOS systems."
+        },
+        {
+            "id": 147,
+            "name": "src/unix/internal.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/internal.h",
+            "Functionality": "Includes internal definitions and functions for Unix-like systems, including data structures and macros for handling platform-specific functionality and system calls."
+        },
+        {
+            "id": 148,
+            "name": "src/win/atomicops-inl.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/win/atomicops-inl.h",
+            "Functionality": "Provides inline functions for atomic operations on Windows systems, including atomic exchange and compare-and-swap operations."
+        },
+        {
+            "id": 149,
+            "name": "test/runner-unix.h",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.test/runner-unix.h",
+            "Functionality": "Defines process-related structures and macros specific to Unix-based systems for running tests. It includes process information structures and functions to manage and execute tests."
+        },
+        {
+            "id": 150,
+            "name": "docs/code/cgi/tick.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/cgi/tick.c",
+            "Functionality": "Demonstrates a simple C program that repeatedly prints 'tick' every second, followed by 'BOOM!' after ten iterations. It uses standard I/O and sleep functions."
+        },
+        {
+            "id": 151,
+            "name": "docs/code/default-loop/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/default-loop/main.c",
+            "Functionality": "Shows a minimal example of initializing and running the default libuv event loop. It creates a loop, starts it, and then cleans up after execution."
+        },
+        {
+            "id": 152,
+            "name": "docs/code/detach/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/detach/main.c",
+            "Functionality": "Illustrates how to start a detached child process using libuv. It demonstrates creating a process with specific options and running it while managing its lifecycle within the event loop."
+        },
+        {
+            "id": 153,
+            "name": "docs/code/helloworld/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/helloworld/main.c",
+            "Functionality": "A simple libuv example that initializes the default event loop and exits immediately. It demonstrates basic setup and teardown of the event loop without any additional operations."
+        },
+        {
+            "id": 154,
+            "name": "docs/code/idle-basic/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/idle-basic/main.c",
+            "Functionality": "Demonstrates a basic use of the libuv library to implement an idle callback that counts up to a specified number before stopping the event loop."
+        },
+        {
+            "id": 155,
+            "name": "docs/code/idle-compute/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/idle-compute/main.c",
+            "Functionality": "Shows how to use libuv for asynchronous tasks by implementing an idle callback that performs computations while the event loop is idle."
+        },
+        {
+            "id": 156,
+            "name": "docs/code/progress/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/progress/main.c",
+            "Functionality": "Simulates a download progress indicator using libuv's asynchronous features, showing how to update progress in real-time."
+        },
+        {
+            "id": 157,
+            "name": "docs/code/queue-cancel/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/queue-cancel/main.c",
+            "Functionality": "Illustrates task cancellation and handling using libuv, where tasks computing Fibonacci numbers are managed and can be canceled on receiving a signal."
+        },
+        {
+            "id": 158,
+            "name": "docs/code/queue-work/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/queue-work/main.c",
+            "Functionality": "Shows how to use libuv's work queue for performing asynchronous computations, specifically calculating Fibonacci numbers in parallel."
+        },
+        {
+            "id": 159,
+            "name": "docs/code/ref-timer/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/ref-timer/main.c",
+            "Functionality": "Demonstrates the use of timers in libuv for periodic tasks, including scheduling tasks to run at specific intervals."
+        },
+        {
+            "id": 160,
+            "name": "docs/code/signal/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/signal/main.c",
+            "Functionality": "Demonstrates signal handling using libuv. It creates two threads, each with its own event loop, to handle SIGUSR1 signals. The threads print received signals and then stop handling them."
+        },
+        {
+            "id": 161,
+            "name": "docs/code/spawn/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/spawn/main.c",
+            "Functionality": "Shows how to spawn a child process using libuv. The child process runs the 'mkdir' command to create a directory. It sets up a callback to handle the child process exit and stops the event loop once the child process completes."
+        },
+        {
+            "id": 162,
+            "name": "docs/code/uvstop/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/uvstop/main.c",
+            "Functionality": "Illustrates the use of libuv’s idle and prepare callbacks within an event loop. It sets up an idle callback that prints messages and stops the event loop after a certain condition is met."
+        },
+        {
+            "id": 163,
+            "name": "docs/code/uvtee/main.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.docs/code/uvtee/main.c",
+            "Functionality": "Shows how to redirect input and output streams using libuv. It sets up pipes to read from standard input and write to standard output and a file, allowing data to flow through these streams asynchronously."
+        },
+        {
+            "id": 164,
+            "name": "src/timer.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/timer.c",
+            "Functionality": "Provides timer functionalities for the event loop, including timer initialization, starting, stopping, and management of scheduled callbacks."
+        },
+        {
+            "id": 165,
+            "name": "src/uv-common.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/uv-common.c",
+            "Functionality": "Contains common utility functions for memory management, string manipulation, and various system operations used across the libuv library."
+        },
+        {
+            "id": 166,
+            "name": "src/uv-data-getter-setters.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/uv-data-getter-setters.c",
+            "Functionality": "Offers getter and setter functions for accessing and modifying data associated with libuv's handles and other objects."
+        },
+        {
+            "id": 167,
+            "name": "src/unix/aix-common.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/aix-common.c",
+            "Functionality": "Provides common functionalities and system calls specific to AIX operating systems to retrieve system and process information."
+        },
+        {
+            "id": 168,
+            "name": "src/unix/aix.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/aix.c",
+            "Functionality": "Implements libuv-specific functionalities and methods optimized for the AIX operating system, managing event loops and other system interactions."
+        },
+        {
+            "id": 169,
+            "name": "src/unix/async.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/async.c",
+            "Functionality": "Handles asynchronous operations and events, allowing inter-thread communication and callback execution in an event-driven architecture."
+        },
+        {
+            "id": 170,
+            "name": "src/unix/core.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/core.c",
+            "Functionality": "Core implementation of libuv's event loop and associated functionalities, managing events and scheduling tasks within the Unix environment."
+        },
+        {
+            "id": 171,
+            "name": "src/unix/cygwin.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/cygwin.c",
+            "Functionality": "Provides implementation details specific to Cygwin platforms, including functions for system uptime and memory-related information."
+        },
+        {
+            "id": 172,
+            "name": "src/unix/darwin-proctitle.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/darwin-proctitle.c",
+            "Functionality": "Implements process title management specific to macOS, allowing for the modification of process and thread names."
+        },
+        {
+            "id": 173,
+            "name": "src/unix/darwin.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/darwin.c",
+            "Functionality": "Contains macOS-specific implementations for libuv's features, including event loops and thread management."
+        },
+        {
+            "id": 174,
+            "name": "src/unix/freebsd.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/freebsd.c",
+            "Functionality": "src/unix/freebsd.c"
+        },
+        {
+            "id": 175,
+            "name": "src/unix/fs.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/fs.c"
+        },
+        {
+            "id": 176,
+            "name": "src/unix/fsevents.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/fsevents.c",
+            "Functionality": "src/unix/fsevents.c"
+        },
+        {
+            "id": 177,
+            "name": "src/unix/haiku.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/haiku.c",
+            "Functionality": "src/unix/haiku.c"
+        },
+        {
+            "id": 178,
+            "name": "src/unix/haiku.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/haiku.c",
+            "Functionality": "src/unix/haiku.c"
+        },
+        {
+            "id": 179,
+            "name": "src/unix/ibmi.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/ibmi.c",
+            "Functionality": "src/unix/ibmi.c"
+        },
+        {
+            "id": 180,
+            "name": "src/unix/linux-core.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/linux-core.c",
+            "Functionality": "src/unix/linux-core.c"
+        },
+        {
+            "id": 181,
+            "name": "src/unix/linux-inotify.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/linux-inotify.c",
+            "Functionality": "src/unix/linux-inotify.c"
+        },
+        {
+            "id": 182,
+            "name": "src/unix/linux-syscalls.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/linux-syscalls.c",
+            "Functionality": "src/unix/linux-syscalls.c"
+        },
+        {
+            "id": 183,
+            "name": "src/unix/loop-watcher.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/loop-watcher.c"
+        },
+        {
+            "id": 184,
+            "name": "src/unix/loop.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/loop.c",
+            "Functionality": "Tests the behavior of the UDP send operations under conditions that could cause the event loop to hang, focusing on detecting potential hang scenarios."
+        },
+        {
+            "id": 185,
+            "name": "src/unix/netbsd.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/netbsd.c",
+            "Functionality": "src/unix/netbsd.c"
+        },
+        {
+            "id": 186,
+            "name": "src/unix/no-fsevents.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/no-fsevents.c",
+            "Functionality": "src/unix/no-fsevents.c"
+        },
+        {
+            "id": 187,
+            "name": "src/unix/no-proctitle.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/no-proctitle.c",
+            "Functionality": "src/unix/no-proctitle.c"
+        },
+        {
+            "id": 188,
+            "name": "src/unix/openbsd.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/openbsd.c",
+            "Functionality": "src/unix/openbsd.c"
+        },
+        {
+            "id": 189,
+            "name": "src/unix/os390-proctitle.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/os390-proctitle.c",
+            "Functionality": "src/unix/os390-proctitle.c"
+        },
+        {
+            "id": 190,
+            "name": "src/unix/os390.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/os390.c",
+            "Functionality": "src/unix/os390.c"
+        },
+        {
+            "id": 191,
+            "name": "src/unix/pipe.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/pipe.c"
+        },
+        {
+            "id": 192,
+            "name": "src/unix/posix-hrtime.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/posix-hrtime.c",
+            "Functionality": "src/unix/posix-hrtime.c"
+        },
+        {
+            "id": 193,
+            "name": "src/unix/posix-poll.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/posix-poll.c",
+            "Functionality": "src/unix/posix-poll.c"
+        },
+        {
+            "id": 194,
+            "name": "src/unix/process.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/process.c"
+        },
+        {
+            "id": 195,
+            "name": "src/unix/stream.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.src/unix/stream.c",
+            "Functionality": "Manages stream operations, including initialization, reading, and writing. It supports network and IPC streams on Unix systems, providing a unified interface for stream-based communication."
+        },
+        {
+            "id": 196,
+            "name": "test/test-loop-handles.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.test/test-loop-handles.c",
+            "Functionality": "Tests the functionality of prepare, check, and idle handles in the event loop. It verifies that these handles are properly triggered and can be stopped or closed without further callbacks."
+        },
+        {
+            "id": 197,
+            "name": "test/test-loop-stop.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.test/test-loop-stop.c",
+            "Functionality": "Examines the behavior of stopping and restarting the event loop. It sets up timers and other handles, then verifies the correct operation of stopping the loop and the subsequent restart."
+        },
+        {
+            "id": 198,
+            "name": "test/test-loop-time.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.test/test-loop-time.c",
+            "Functionality": "Tests time retrieval and timing functionalities within the event loop. It checks that the `uv_now()` function returns accurate time and verifies how timers are handled and updated during loop execution."
+        },
+        {
+            "id": 199,
+            "name": "test/test-queue-foreach-delete.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.uv_io_t.test/test-queue-foreach-delete.c",
+            "Functionality": "Tests the behavior of iterating over and deleting handles in a libuv queue. It ensures that deletion of handles during iteration does not lead to inconsistencies or crashes."
+        },
+        {
+            "id": 200,
+            "name": "src/unix/os390-syscalls.h",
+            "category": "item",
+            "parentId": 6,
+            "qualifiedName": "6.epoll.src/unix/os390-syscalls.h",
+            "Functionality": "Defines system call wrappers and data structures for OS/390 systems, providing support for specific system calls and functionalities on OS/390."
+        },
+        {
+            "id": 201,
+            "name": "src/unix/epoll.c",
+            "category": "item",
+            "parentId": 6,
+            "qualifiedName": "6.epoll.src/unix/epoll.c",
+            "Functionality": "src/unix/epoll.c"
+        },
+        {
+            "id": 202,
+            "name": "src/unix/os390-syscalls.c",
+            "category": "item",
+            "parentId": 6,
+            "qualifiedName": "6.epoll.src/unix/os390-syscalls.c",
+            "Functionality": "src/unix/os390-syscalls.c"
+        },
+        {
+            "id": 203,
+            "name": "src/unix/poll.c",
+            "category": "item",
+            "parentId": 6,
+            "qualifiedName": "6.epoll.src/unix/poll.c",
+            "Functionality": "Implements file system polling using libuv. It provides functionality to monitor changes in files or directories and trigger events based on file system modifications."
+        },
+        {
+            "id": 204,
+            "name": "src/unix/sunos.c",
+            "category": "item",
+            "parentId": 6,
+            "qualifiedName": "6.epoll.src/unix/sunos.c",
+            "Functionality": "Provides platform-specific implementations for Solaris systems, handling various system interactions and functionality required by `libuv`."
+        },
+        {
+            "id": 205,
+            "name": "src/unix/kqueue.c",
+            "category": "item",
+            "parentId": 7,
+            "qualifiedName": "7.kqueue.src/unix/kqueue.c",
+            "Functionality": "src/unix/kqueue.c"
+        },
+        {
+            "id": 206,
+            "name": "include/uv/sunos.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.event_ports.include/uv/sunos.h",
+            "Functionality": "Contains definitions and data structures specific to the SunOS operating system, facilitating platform compatibility for libuv."
+        },
+        {
+            "id": 207,
+            "name": "src/win/handle-inl.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/handle-inl.h",
+            "Functionality": "Defines inline functions and macros for managing handles in Windows, including handle initialization, closing, and state management."
+        },
+        {
+            "id": 208,
+            "name": "src/win/internal.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/internal.h",
+            "Functionality": "Contains internal definitions and declarations for Windows-specific functionalities in libuv, including system call wrappers, handle management, and error handling."
+        },
+        {
+            "id": 209,
+            "name": "src/win/req-inl.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/req-inl.h",
+            "Functionality": "Provides inline functions for handling request-related operations specific to the Windows platform within the libuv library. It includes initialization and management of request structures and synchronization mechanisms."
+        },
+        {
+            "id": 210,
+            "name": "src/win/stream-inl.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/stream-inl.h",
+            "Functionality": "Contains inline functions for managing stream operations specific to Windows in libuv. It includes stream initialization and connection handling functionalities."
+        },
+        {
+            "id": 211,
+            "name": "src/win/winapi.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/winapi.h",
+            "Functionality": "Defines and encapsulates Windows API status codes and macros to handle platform-specific functionalities. It includes compatibility definitions and utility functions for interacting with the Windows operating system."
+        },
+        {
+            "id": 212,
+            "name": "src/win/winsock.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/winsock.h",
+            "Functionality": "Handles Winsock-related functionalities and definitions for networking on Windows. It includes necessary headers and custom definitions for network operations such as TCP/UDP socket management."
+        },
+        {
+            "id": 213,
+            "name": "test/runner-win.h",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.test/runner-win.h",
+            "Functionality": "Provides definitions for managing process information on Windows systems within the test framework. It includes structures for handling process handles and standard I/O redirection."
+        },
+        {
+            "id": 214,
+            "name": "src/win/core.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/core.c",
+            "Functionality": "Manages the core event loop functionality on Windows, including initialization, running, and managing the event loop and I/O completion ports."
+        },
+        {
+            "id": 215,
+            "name": "src/win/detect-wakeup.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/detect-wakeup.c",
+            "Functionality": "Detects system wake-up events on Windows, handling scenarios where the system resumes from sleep and ensuring proper operation of the event loop."
+        },
+        {
+            "id": 216,
+            "name": "src/win/async.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/async.c",
+            "Functionality": "Implements asynchronous operations using `uv_async_t` on Windows. It handles initialization, sending, and closing of asynchronous handles and manages signal handling for asynchronous wakeups."
+        },
+        {
+            "id": 217,
+            "name": "src/win/loop-watcher.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/loop-watcher.c",
+            "Functionality": "Manages the event loop watcher functionalities, integrating with the Windows event loop for handling asynchronous events."
+        },
+        {
+            "id": 218,
+            "name": "src/win/handle.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/handle.c",
+            "Functionality": "Includes functions for managing handles in Windows, such as uv_guess_handle to determine the type of handle based on its file descriptor."
+        },
+        {
+            "id": 219,
+            "name": "src/win/core.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/core.c",
+            "Functionality": "Manages the core event loop functionality on Windows, including initialization, running, and managing the event loop and I/O completion ports."
+        },
+        {
+            "id": 220,
+            "name": "src/win/pipe.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/pipe.c",
+            "Functionality": "Provides implementation for named pipes in Windows, supporting inter-process communication (IPC) functionality."
+        },
+        {
+            "id": 221,
+            "name": "src/win/poll.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/poll.c",
+            "Functionality": "Implements polling mechanisms for checking the readiness of file descriptors in Windows, facilitating asynchronous I/O operations."
+        },
+        {
+            "id": 222,
+            "name": "src/win/tcp.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/tcp.c",
+            "Functionality": "Manages TCP socket functionalities, providing APIs for creating, connecting, and manipulating TCP sockets in a Windows environment."
+        },
+        {
+            "id": 223,
+            "name": "src/win/stream.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/stream.c",
+            "Functionality": "Implements stream handling functionalities over TCP and IPC on Windows, dealing with operations related to reading and writing streams."
+        },
+        {
+            "id": 224,
+            "name": "src/win/thread.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/thread.c",
+            "Functionality": "Implements threading and synchronization primitives for Windows, such as thread creation, mutexes, condition variables, and semaphores."
+        },
+        {
+            "id": 225,
+            "name": "src/win/core.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/core.c",
+            "Functionality": "Manages the core event loop functionality on Windows, including initialization, running, and managing the event loop and I/O completion ports."
+        },
+        {
+            "id": 226,
+            "name": "src/win/pipe.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/pipe.c",
+            "Functionality": "Provides implementation for named pipes in Windows, supporting inter-process communication (IPC) functionality."
+        },
+        {
+            "id": 227,
+            "name": "src/win/poll.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/poll.c",
+            "Functionality": "Implements polling mechanisms for checking the readiness of file descriptors in Windows, facilitating asynchronous I/O operations."
+        },
+        {
+            "id": 228,
+            "name": "src/win/tcp.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/tcp.c",
+            "Functionality": "Manages TCP socket functionalities, providing APIs for creating, connecting, and manipulating TCP sockets in a Windows environment."
+        },
+        {
+            "id": 229,
+            "name": "src/win/udp.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/udp.c",
+            "Functionality": "Provides UDP protocol support in Windows, including creating sockets, binding, and sending/receiving data asynchronously."
+        },
+        {
+            "id": 230,
+            "name": "src/win/stream.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.src/win/stream.c",
+            "Functionality": "Implements stream handling functionalities over TCP and IPC on Windows, dealing with operations related to reading and writing streams."
+        },
+        {
+            "id": 231,
+            "name": "test/benchmark-pump.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.test/benchmark-pump.c",
+            "Functionality": "This file benchmarks TCP and pipe connection performance using the libuv library by setting up a server and client that measure throughput and efficiency under multiple simultaneous connections."
+        },
+        {
+            "id": 232,
+            "name": "test/benchmark-pound.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.IOCP.test/benchmark-pound.c",
+            "Functionality": "Benchmark program to test the performance handling a large number of concurrent TCP or IPC connections utilizing libuv."
+        },
+        {
+            "id": 233,
+            "name": "src/unix/linux-syscalls.h",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/unix/linux-syscalls.h",
+            "Functionality": "Defines system call wrappers and data structures specific to Linux systems, handling various Linux-specific system calls and functionalities."
+        },
+        {
+            "id": 234,
+            "name": "src/win/fs-fd-hash-inl.h",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs-fd-hash-inl.h",
+            "Functionality": "Implements a hash table for managing file descriptors on Windows, including functions for adding, finding, and removing file descriptor entries."
+        },
+        {
+            "id": 235,
+            "name": "docs/code/onchange/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.docs/code/onchange/main.c",
+            "Functionality": "Monitors file or directory changes using libuv and triggers actions based on detected changes, demonstrating file system event handling."
+        },
+        {
+            "id": 236,
+            "name": "docs/code/uvcat/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.docs/code/uvcat/main.c",
+            "Functionality": "Demonstrates file I/O redirection using libuv. It opens a file specified by a command-line argument, reads its content asynchronously, and writes it to standard output."
+        },
+        {
+            "id": 237,
+            "name": "docs/code/uvwget/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.docs/code/uvwget/main.c",
+            "Functionality": "Combines libuv and libcurl to create an asynchronous file download client. It manages the event loop to handle the download process and write the received data to a file."
+        },
+        {
+            "id": 238,
+            "name": "src/fs-poll.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/fs-poll.c"
+        },
+        {
+            "id": 239,
+            "name": "src/unix/procfs-exepath.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/unix/procfs-exepath.c",
+            "Functionality": "src/unix/procfs-exepath.c"
+        },
+        {
+            "id": 240,
+            "name": "src/unix/proctitle.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/unix/proctitle.c",
+            "Functionality": "Modifies and manages the process title on BSD Unix systems by interacting with system-level APIs to set process display names."
+        },
+        {
+            "id": 241,
+            "name": "src/unix/qnx.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/unix/qnx.c",
+            "Functionality": "src/unix/qnx.c"
+        },
+        {
+            "id": 242,
+            "name": "src/unix/procfs-exepath.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/unix/procfs-exepath.c",
+            "Functionality": "src/unix/procfs-exepath.c"
+        },
+        {
+            "id": 243,
+            "name": "src/win/fs.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs.c",
+            "Functionality": "Implements file system operations for Windows, including functions for reading, writing, and manipulating files and directories."
+        },
+        {
+            "id": 244,
+            "name": "src/win/fs-event.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs-event.c",
+            "Functionality": "Provides functionalities to monitor file system changes using Windows specific APIs, enabling asynchronous file system event handling for directories."
+        },
+        {
+            "id": 245,
+            "name": "src/win/fs.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs.c",
+            "Functionality": "Implements file system operations for Windows, including functions for reading, writing, and manipulating files and directories."
+        },
+        {
+            "id": 246,
+            "name": "src/win/fs-event.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs-event.c",
+            "Functionality": "Provides functionalities to monitor file system changes using Windows specific APIs, enabling asynchronous file system event handling for directories."
+        },
+        {
+            "id": 247,
+            "name": "src/win/process-stdio.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/process-stdio.c",
+            "Functionality": "Handles standard input/output for subprocesses in Windows, managing the I/O streams associated with child processes."
+        },
+        {
+            "id": 248,
+            "name": "src/win/fs.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs.c",
+            "Functionality": "Implements file system operations for Windows, including functions for reading, writing, and manipulating files and directories."
+        },
+        {
+            "id": 249,
+            "name": "src/win/fs-event.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/fs-event.c",
+            "Functionality": "Provides functionalities to monitor file system changes using Windows specific APIs, enabling asynchronous file system event handling for directories."
+        },
+        {
+            "id": 250,
+            "name": "src/win/process-stdio.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.src/win/process-stdio.c",
+            "Functionality": "Handles standard input/output for subprocesses in Windows, managing the I/O streams associated with child processes."
+        },
+        {
+            "id": 251,
+            "name": "test/test-fs-copyfile.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs-copyfile.c",
+            "Functionality": "This file focuses on testing the `uv_fs_copyfile` function, validating that the file copying functionality works as expected under various scenarios and edge cases."
+        },
+        {
+            "id": 252,
+            "name": "test/test-fs-event.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs-event.c",
+            "Functionality": "This file tests file system event monitoring capabilities using `uv_fs_event`, ensuring that changes to files and directories are detected and reported correctly."
+        },
+        {
+            "id": 253,
+            "name": "test/test-fs-fd-hash.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs-fd-hash.c",
+            "Functionality": "This file serves to verify the functionality of the file descriptor hash table, testing operations such as insertion, removal, and collision management."
+        },
+        {
+            "id": 254,
+            "name": "test/test-fs-open-flags.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs-open-flags.c",
+            "Functionality": "This file tests the `uv_fs_open` function with various flags to ensure that file opening operations behave correctly depending on the specified mode and access permissions."
+        },
+        {
+            "id": 255,
+            "name": "test/test-fs-poll.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs-poll.c",
+            "Functionality": "This file tests the `uv_fs_poll` functionalities, ensuring that file changes are detected accurately and that the API behaves correctly under different conditions."
+        },
+        {
+            "id": 256,
+            "name": "test/test-fs-readdir.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs-readdir.c",
+            "Functionality": "This file contains tests for the `uv_fs_readdir` function, validating proper directory reading, including handling of empty directories and non-existent paths."
+        },
+        {
+            "id": 257,
+            "name": "test/test-fs.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-fs.c",
+            "Functionality": "This file is a general test suite for various file system operations in libuv, covering opening, reading, writing, and error handling to ensure the API works correctly."
+        },
+        {
+            "id": 258,
+            "name": "test/test-metrics.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.File_I/O.test/test-metrics.c",
+            "Functionality": "Measures and verifies various performance metrics of the event loop. It ensures that metrics related to idle time and other performance indicators are reported accurately."
+        },
+        {
+            "id": 259,
+            "name": "docs/code/dns/main.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.docs/code/dns/main.c",
+            "Functionality": "Provides an example of DNS resolution and TCP connection using libuv. It includes functionality to resolve DNS names and establish TCP connections based on the resolved addresses."
+        },
+        {
+            "id": 260,
+            "name": "src/unix/sysinfo-loadavg.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/unix/sysinfo-loadavg.c",
+            "Functionality": "Retrieves and provides system load average information using system calls specific to Unix-like systems."
+        },
+        {
+            "id": 261,
+            "name": "src/unix/sysinfo-memory.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/unix/sysinfo-memory.c",
+            "Functionality": "Implements functions to gather and report system memory statistics, including total and available memory, using appropriate system calls."
+        },
+        {
+            "id": 262,
+            "name": "src/win/getaddrinfo.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/win/getaddrinfo.c",
+            "Functionality": "Provides Windows-specific implementations for address resolution, managing the getaddrinfo and related functions to translate hostnames into IP addresses."
+        },
+        {
+            "id": 263,
+            "name": "src/win/getnameinfo.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/win/getnameinfo.c",
+            "Functionality": "Implements the getnameinfo function to convert socket addresses to hostnames and service names on Windows systems."
+        },
+        {
+            "id": 264,
+            "name": "src/win/getaddrinfo.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/win/getaddrinfo.c",
+            "Functionality": "Provides Windows-specific implementations for address resolution, managing the getaddrinfo and related functions to translate hostnames into IP addresses."
+        },
+        {
+            "id": 265,
+            "name": "src/win/getnameinfo.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/win/getnameinfo.c",
+            "Functionality": "Implements the getnameinfo function to convert socket addresses to hostnames and service names on Windows systems."
+        },
+        {
+            "id": 266,
+            "name": "src/win/getaddrinfo.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/win/getaddrinfo.c",
+            "Functionality": "Provides Windows-specific implementations for address resolution, managing the getaddrinfo and related functions to translate hostnames into IP addresses."
+        },
+        {
+            "id": 267,
+            "name": "src/win/getnameinfo.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.src/win/getnameinfo.c",
+            "Functionality": "Implements the getnameinfo function to convert socket addresses to hostnames and service names on Windows systems."
+        },
+        {
+            "id": 268,
+            "name": "test/test-idna.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.DNS_Ops.test/test-idna.c",
+            "Functionality": "Tests UTF-8 encoding/decoding and internationalized domain name (IDN) handling in libuv to ensure proper conversion and processing of domain names."
+        },
+        {
+            "id": 269,
+            "name": "src/unix/spinlock.h",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.src/unix/spinlock.h",
+            "Functionality": "Implements a spinlock mechanism for synchronization in Unix-like systems, providing functions to initialize, lock, unlock, and try locking a spinlock."
+        },
+        {
+            "id": 270,
+            "name": "docs/code/locks/main.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.docs/code/locks/main.c",
+            "Functionality": "Illustrates the use of read-write locks and barriers in libuv for synchronizing threads accessing shared resources."
+        },
+        {
+            "id": 271,
+            "name": "docs/code/proc-streams/main.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.docs/code/proc-streams/main.c",
+            "Functionality": "Demonstrates the creation and management of child processes using libuv, including handling standard input/output streams."
+        },
+        {
+            "id": 272,
+            "name": "docs/code/proc-streams/test.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.docs/code/proc-streams/test.c",
+            "Functionality": "Provides a test case for the process management functionalities in libuv, focusing on input and output stream handling between processes."
+        },
+        {
+            "id": 273,
+            "name": "docs/code/thread-create/main.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.docs/code/thread-create/main.c",
+            "Functionality": "Demonstrates thread creation and management using libuv. It spawns two threads, each simulating a 'hare' and 'tortoise' with different running speeds, to show concurrent execution."
+        },
+        {
+            "id": 274,
+            "name": "src/threadpool.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.src/threadpool.c",
+            "Functionality": "Manages a thread pool to efficiently handle and execute asynchronous tasks, including task scheduling and execution mechanics."
+        },
+        {
+            "id": 275,
+            "name": "src/unix/bsd-proctitle.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.src/unix/bsd-proctitle.c"
+        },
+        {
+            "id": 276,
+            "name": "src/unix/thread.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.src/unix/thread.c",
+            "Functionality": "Provides implementations for threading and synchronization primitives using POSIX threads (pthreads). It includes barriers, mutexes, read-write locks, and thread management functions."
+        },
+        {
+            "id": 277,
+            "name": "src/win/thread.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.src/win/thread.c",
+            "Functionality": "Implements threading and synchronization primitives for Windows, such as thread creation, mutexes, condition variables, and semaphores."
+        },
+        {
+            "id": 278,
+            "name": "src/win/thread.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.src/win/thread.c",
+            "Functionality": "Implements threading and synchronization primitives for Windows, such as thread creation, mutexes, condition variables, and semaphores."
+        },
+        {
+            "id": 279,
+            "name": "test/benchmark-queue-work.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/benchmark-queue-work.c",
+            "Functionality": "This file benchmarks the performance of the libuv work queue by measuring the time taken to queue and execute a large number of asynchronous tasks."
+        },
+        {
+            "id": 280,
+            "name": "test/benchmark-thread.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/benchmark-thread.c",
+            "Functionality": "This file benchmarks the performance of thread creation and management using libuv, specifically measuring the time and efficiency of creating and handling a large number of threads."
+        },
+        {
+            "id": 281,
+            "name": "test/test-condvar.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-condvar.c",
+            "Functionality": "Tests condition variable synchronization with libuv by using `uv_cond_t` and `uv_mutex_t` to coordinate thread operations and ensure that threads correctly wait and signal each other."
+        },
+        {
+            "id": 282,
+            "name": "test/test-loop-alive.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-loop-alive.c",
+            "Functionality": "Checks the behavior of `uv_loop_alive` function to ensure it correctly identifies whether the event loop is still active, validating loop management and lifecycle."
+        },
+        {
+            "id": 283,
+            "name": "test/test-mutexes.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-mutexes.c",
+            "Functionality": "Verifies the correct operation of mutexes and condition variables in libuv. It tests threading synchronization mechanisms to ensure they function correctly across multiple threads."
+        },
+        {
+            "id": 284,
+            "name": "test/test-thread-equal.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-thread-equal.c",
+            "Functionality": "Verifies thread equality in libuv by comparing thread IDs across different threads, ensuring proper thread management."
+        },
+        {
+            "id": 285,
+            "name": "test/test-thread.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-thread.c",
+            "Functionality": "Tests multi-threading capabilities in libuv, including thread creation, event loop management, and thread-local storage (TLS) usage."
+        },
+        {
+            "id": 286,
+            "name": "test/test-threadpool-cancel.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-threadpool-cancel.c",
+            "Functionality": "Tests the cancellation of tasks within thread pools in libuv, ensuring asynchronous operations can be correctly canceled."
+        },
+        {
+            "id": 287,
+            "name": "test/test-threadpool.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.Thread_Pool_Management.test/test-threadpool.c",
+            "Functionality": "Validates the functionality of thread pools in libuv by running various asynchronous tasks and ensuring they complete successfully."
+        },
+        {
+            "id": 288,
+            "name": "docs/code/plugin/plugin.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.docs/code/plugin/plugin.h",
+            "Functionality": "Defines an interface for a plugin system, including function declarations for registering a plugin."
+        },
+        {
+            "id": 289,
+            "name": "src/heap-inl.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/heap-inl.h",
+            "Functionality": "Implements a binary min-heap data structure with macros and functions for heap operations, including initialization, addition, and removal of elements."
+        },
+        {
+            "id": 290,
+            "name": "src/idna.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/idna.h",
+            "Functionality": "Provides functions for encoding and decoding Internationalized Domain Names (IDN) according to IDNA 2008 standards, including UTF-8 to ASCII conversion."
+        },
+        {
+            "id": 291,
+            "name": "src/queue.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/queue.h",
+            "Functionality": "Defines macros for manipulating a doubly linked list data structure, including initialization, addition, removal, and iteration over list elements."
+        },
+        {
+            "id": 292,
+            "name": "src/strscpy.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/strscpy.h",
+            "Functionality": "Provides a function for safely copying strings with length constraints, ensuring that the destination buffer is not overflowed."
+        },
+        {
+            "id": 293,
+            "name": "src/strtok.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/strtok.h",
+            "Functionality": "Implements a custom string tokenization function that splits a string into tokens based on specified delimiters and maintains the state between successive calls."
+        },
+        {
+            "id": 294,
+            "name": "src/strscpy.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/strscpy.h",
+            "Functionality": "Provides a function for safely copying strings with length constraints, ensuring that the destination buffer is not overflowed."
+        },
+        {
+            "id": 295,
+            "name": "src/unix/atomic-ops.h",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/atomic-ops.h",
+            "Functionality": "Defines atomic operations and synchronization primitives for Unix-like systems, including atomic compare-and-swap and exchange operations."
+        },
+        {
+            "id": 296,
+            "name": "docs/code/plugin/hello.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.docs/code/plugin/hello.c",
+            "Functionality": "Defines a simple plugin with an initialization function that registers a message 'Hello World!' with a plugin system."
+        },
+        {
+            "id": 297,
+            "name": "docs/code/plugin/main.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.docs/code/plugin/main.c",
+            "Functionality": "Loads and initializes plugins dynamically, using libuv for handling asynchronous operations and managing plugin lifecycle."
+        },
+        {
+            "id": 298,
+            "name": "src/idna.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/idna.c",
+            "Functionality": "Handles Internationalized Domain Names (IDNA) operations. It converts domain names from UTF-8 to ASCII-compatible encoding and vice versa, supporting international domain names in network operations."
+        },
+        {
+            "id": 299,
+            "name": "src/inet.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/inet.c",
+            "Functionality": "Provides functions for converting IP addresses between text and binary formats. It supports both IPv4 and IPv6 addresses and is used for network address manipulation."
+        },
+        {
+            "id": 300,
+            "name": "src/random.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/random.c",
+            "Functionality": "Implements a random number generation interface. The file provides functions to generate random bytes or numbers, using platform-specific methods to ensure randomness."
+        },
+        {
+            "id": 301,
+            "name": "src/strscpy.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/strscpy.c",
+            "Functionality": "Implements a safe string copy function. The `uv__strscpy` function copies strings with bounds checking to prevent buffer overflows, enhancing security and stability."
+        },
+        {
+            "id": 302,
+            "name": "src/strtok.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/strtok.c",
+            "Functionality": "Implements a custom string tokenization function similar to strtok, allowing parsing of strings based on delimiters."
+        },
+        {
+            "id": 303,
+            "name": "src/version.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/version.c",
+            "Functionality": "Defines the version information for the libuv library, including major, minor, and patch versioning, and provides a version string."
+        },
+        {
+            "id": 304,
+            "name": "src/unix/dl.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/dl.c",
+            "Functionality": "Handles dynamic linking for shared libraries, allowing the loading and execution of functions from external libraries at runtime."
+        },
+        {
+            "id": 305,
+            "name": "src/unix/pthread-fixes.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/pthread-fixes.c",
+            "Functionality": "src/unix/pthread-fixes.c"
+        },
+        {
+            "id": 306,
+            "name": "src/unix/random-devurandom.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/random-devurandom.c",
+            "Functionality": "src/unix/random-devurandom.c"
+        },
+        {
+            "id": 307,
+            "name": "src/unix/random-getentropy.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/random-getentropy.c",
+            "Functionality": "Implements a function to retrieve random data from the system using the `getentropy` function if available. It handles errors and reads random bytes into a buffer."
+        },
+        {
+            "id": 308,
+            "name": "src/unix/random-getrandom.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/random-getrandom.c",
+            "Functionality": "Provides a method to obtain random data using the `getrandom` system call on Linux or dynamically loads it from other platforms. It manages errors and ensures data retrieval is reliable."
+        },
+        {
+            "id": 309,
+            "name": "src/unix/random-sysctl-linux.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/random-sysctl-linux.c",
+            "Functionality": "Implements random data retrieval on Linux systems using the `sysctl` interface for generating UUIDs and other random values."
+        },
+        {
+            "id": 310,
+            "name": "src/unix/proctitle.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/proctitle.c",
+            "Functionality": "Modifies and manages the process title on BSD Unix systems by interacting with system-level APIs to set process display names."
+        },
+        {
+            "id": 311,
+            "name": "src/unix/pthread-fixes.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/pthread-fixes.c",
+            "Functionality": "src/unix/pthread-fixes.c"
+        },
+        {
+            "id": 312,
+            "name": "src/unix/tty.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/unix/tty.c",
+            "Functionality": "Handles terminal (TTY) operations, such as initializing terminal settings, configuring modes, and retrieving terminal window sizes on Unix-like systems."
+        },
+        {
+            "id": 313,
+            "name": "src/win/error.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/error.c",
+            "Functionality": "Implements error handling functions specific to Windows, including uv_fatal_error which logs error messages based on error numbers and optionally the failed system call."
+        },
+        {
+            "id": 314,
+            "name": "src/win/dl.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/dl.c",
+            "Functionality": "Provides functions for dynamic loading of libraries (DLLs) on Windows. It includes operations for opening, closing, and symbol resolution within DLLs."
+        },
+        {
+            "id": 315,
+            "name": "src/win/error.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/error.c",
+            "Functionality": "Implements error handling functions specific to Windows, including uv_fatal_error which logs error messages based on error numbers and optionally the failed system call."
+        },
+        {
+            "id": 316,
+            "name": "src/win/dl.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/dl.c",
+            "Functionality": "Provides functions for dynamic loading of libraries (DLLs) on Windows. It includes operations for opening, closing, and symbol resolution within DLLs."
+        },
+        {
+            "id": 317,
+            "name": "src/win/snprintf.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/snprintf.c",
+            "Functionality": "Provides a safer implementation of snprintf for Windows, addressing limitations in older MSVC compilers regarding string formatting."
+        },
+        {
+            "id": 318,
+            "name": "src/win/error.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/error.c",
+            "Functionality": "Implements error handling functions specific to Windows, including uv_fatal_error which logs error messages based on error numbers and optionally the failed system call."
+        },
+        {
+            "id": 319,
+            "name": "src/win/dl.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/dl.c",
+            "Functionality": "Provides functions for dynamic loading of libraries (DLLs) on Windows. It includes operations for opening, closing, and symbol resolution within DLLs."
+        },
+        {
+            "id": 320,
+            "name": "src/win/snprintf.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/snprintf.c",
+            "Functionality": "Provides a safer implementation of snprintf for Windows, addressing limitations in older MSVC compilers regarding string formatting."
+        },
+        {
+            "id": 321,
+            "name": "src/win/util.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/util.c",
+            "Functionality": "Contains utility functions for various Windows-specific operations that assist in the operation of libuv."
+        },
+        {
+            "id": 322,
+            "name": "src/win/winapi.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/winapi.c",
+            "Functionality": "Dynamically loads Windows API functions and manages their usage for system calls within the libuv framework."
+        },
+        {
+            "id": 323,
+            "name": "src/win/winsock.c",
+            "category": "item",
+            "parentId": 2,
+            "qualifiedName": "2.Utility.src/win/winsock.c",
+            "Functionality": "Handles Windows Sockets API initialization and management, including error handling for networking operations."
+        },
+        {
+            "id": 324,
+            "name": "test/benchmark-list.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-list.h",
+            "Functionality": "Declares various benchmarking and helper functions for performance testing. It includes macros to list benchmark tests and their helpers, as well as defining the range of tasks for evaluation."
+        },
+        {
+            "id": 325,
+            "name": "test/runner.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/runner.h",
+            "Functionality": "Contains declarations for managing and running tests and benchmarks. It includes macros for test declaration and entry, as well as utilities to list and execute various test tasks."
+        },
+        {
+            "id": 326,
+            "name": "test/task.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/task.h",
+            "Functionality": "Defines constants, macros, and types related to testing tasks. It includes definitions for task-related configurations such as ports and pipe names used in tests."
+        },
+        {
+            "id": 327,
+            "name": "test/test-list.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-list.h",
+            "Functionality": "Declares a list of tests and benchmark functions for the test framework. It includes macros for declaring test entries and organizing them into a manageable list for execution."
+        },
+        {
+            "id": 328,
+            "name": "test/benchmark-million-timers.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-million-timers.c",
+            "Functionality": "Benchmarks the ability of libuv to manage millions of timer handles efficiently, measuring any performance bottlenecks."
+        },
+        {
+            "id": 329,
+            "name": "test/benchmark-million-async.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-million-async.c",
+            "Functionality": "Tests the performance impact of handling a million asynchronous callbacks to assess libuv's scalability."
+        },
+        {
+            "id": 330,
+            "name": "test/benchmark-loop-count.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-loop-count.c",
+            "Functionality": "Evaluates the performance of the event loop by counting iterations over a specified duration and measuring the processing time."
+        },
+        {
+            "id": 331,
+            "name": "test/benchmark-async.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-async.c",
+            "Functionality": "Tests the performance of asynchronous operations in libuv by executing a large number of async tasks and measuring throughput."
+        },
+        {
+            "id": 332,
+            "name": "test/benchmark-async-pummel.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-async-pummel.c",
+            "Functionality": "Benchmarks the performance of handling high volumes of asynchronous operations using libuv, measuring task execution speed."
+        },
+        {
+            "id": 333,
+            "name": "test/benchmark-spawn.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-spawn.c",
+            "Functionality": "This file benchmarks the performance of process spawning using libuv by measuring the time and efficiency of creating and managing a large number of subprocesses."
+        },
+        {
+            "id": 334,
+            "name": "test/run-benchmarks.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/run-benchmarks.c",
+            "Functionality": "This file is responsible for executing and managing various benchmark tests, initializing the test environment, and reporting the results."
+        },
+        {
+            "id": 335,
+            "name": "test/run-tests.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/run-tests.c",
+            "Functionality": "This file manages and runs unit tests for the libuv library, handling test execution, output formatting, and error reporting."
+        },
+        {
+            "id": 336,
+            "name": "test/runner-unix.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/runner-unix.c",
+            "Functionality": "This file provides the test runner implementation for Unix platforms, managing process and file operations specific to Unix systems."
+        },
+        {
+            "id": 337,
+            "name": "test/runner-win.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/runner-win.c",
+            "Functionality": "This file provides the test runner implementation for Windows platforms, managing process and file operations specific to Windows systems."
+        },
+        {
+            "id": 338,
+            "name": "test/runner.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/runner.c",
+            "Functionality": "This file is a generic test runner that initializes the testing framework, manages test execution, and handles test results and output."
+        },
+        {
+            "id": 339,
+            "name": "test/test-active.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-active.c",
+            "Functionality": "This file tests the active and inactive states of timers in the libuv library, ensuring that timers are correctly activated and deactivated."
+        },
+        {
+            "id": 340,
+            "name": "test/test-get-currentexe.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-get-currentexe.c",
+            "Functionality": "This file tests the `uv_exepath` function, validating that the path to the currently running executable can be accurately retrieved."
+        },
+        {
+            "id": 341,
+            "name": "test/test-get-loadavg.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-get-loadavg.c",
+            "Functionality": "This file validates the functions for retrieving system load average values, ensuring they return the expected output based on the current system state."
+        },
+        {
+            "id": 342,
+            "name": "test/test-get-memory.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-get-memory.c",
+            "Functionality": "This file tests the memory retrieval functions, including `uv_get_free_memory` and `uv_get_total_memory`, to ensure accurate reporting of memory usage on the system."
+        },
+        {
+            "id": 343,
+            "name": "test/benchmark-sizes.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/benchmark-sizes.c",
+            "Functionality": "This file benchmarks and reports the memory size of various libuv data structures to understand their footprint and impact on memory usage."
+        },
+        {
+            "id": 344,
+            "name": "test/test-async-null-cb.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-async-null-cb.c",
+            "Functionality": "This file tests the behavior of the libuv asynchronous handle when initialized with a null callback, ensuring that the library handles such cases correctly."
+        },
+        {
+            "id": 345,
+            "name": "test/test-async.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-async.c",
+            "Functionality": "Tests asynchronous operations in libuv by setting up an event loop with periodic callbacks to ensure correct execution order and callback handling."
+        },
+        {
+            "id": 346,
+            "name": "test/test-barrier.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-barrier.c",
+            "Functionality": "Validates the synchronization behavior of `uv_barrier` across multiple threads, ensuring that all threads can correctly wait for each other to reach a certain point before proceeding."
+        },
+        {
+            "id": 347,
+            "name": "test/test-cwd-and-chdir.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-cwd-and-chdir.c",
+            "Functionality": "Verifies the functionality of changing and retrieving the current working directory using `uv_cwd` and `uv_chdir`, ensuring that directory changes are applied and reflected correctly."
+        },
+        {
+            "id": 348,
+            "name": "test/test-default-loop-close.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-default-loop-close.c",
+            "Functionality": "Tests the closing behavior of the default event loop in libuv, ensuring that handles and resources are properly cleaned up when the default loop is closed."
+        },
+        {
+            "id": 349,
+            "name": "test/test-dlerror.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-dlerror.c",
+            "Functionality": "Tests the `uv_dlerror` function for handling dynamic library errors, ensuring that error messages are correctly reported when dynamic library operations fail."
+        },
+        {
+            "id": 350,
+            "name": "test/test-error.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-error.c",
+            "Functionality": "This file contains a suite of tests that validate the error handling mechanisms in the libuv library, ensuring that proper error messages and codes are returned for various operations."
+        },
+        {
+            "id": 351,
+            "name": "test/test-env-vars.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-env-vars.c",
+            "Functionality": "Tests the manipulation of environment variables using `uv_os_setenv` and `uv_os_getenv`, ensuring that environment variables are set and retrieved correctly within the libuv context."
+        },
+        {
+            "id": 352,
+            "name": "test/test-fail-always.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-fail-always.c",
+            "Functionality": "This file is designed to always fail, providing a means to test the test runner's functionality and ensure that it correctly reports failures."
+        },
+        {
+            "id": 353,
+            "name": "test/test-get-passwd.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-get-passwd.c",
+            "Functionality": "This file tests the functions related to retrieving user account information, checking the correctness of user data like username and home directory."
+        },
+        {
+            "id": 354,
+            "name": "test/test-getaddrinfo.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-getaddrinfo.c",
+            "Functionality": "This file tests the `uv_getaddrinfo` function under various conditions, ensuring correct resolution of domain names to IP addresses."
+        },
+        {
+            "id": 355,
+            "name": "test/test-gethostname.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-gethostname.c",
+            "Functionality": "This file tests the `uv_os_gethostname` function, validating that it correctly retrieves the system's hostname."
+        },
+        {
+            "id": 356,
+            "name": "test/test-getnameinfo.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-getnameinfo.c",
+            "Functionality": "Tests the `uv_getnameinfo` function for resolving IPv4 and IPv6 addresses into hostnames and vice versa. Ensures correctness in address resolution and error handling."
+        },
+        {
+            "id": 357,
+            "name": "test/test-getsockname.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-getsockname.c",
+            "Functionality": "Validates the `uv_tcp_getsockname` and `uv_tcp_getpeername` functions by checking the retrieval of local and peer addresses for TCP and UDP sockets."
+        },
+        {
+            "id": 358,
+            "name": "test/test-getters-setters.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-getters-setters.c",
+            "Functionality": "Tests various getter and setter functions within libuv to ensure proper functionality and correct behavior of handle properties and configurations."
+        },
+        {
+            "id": 359,
+            "name": "test/test-gettimeofday.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-gettimeofday.c",
+            "Functionality": "Checks the `uv_gettimeofday` function for accurate retrieval of the current time, and verifies handling of invalid inputs."
+        },
+        {
+            "id": 360,
+            "name": "test/test-handle-fileno.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-handle-fileno.c",
+            "Functionality": "Tests the `uv_fileno` function to ensure correct retrieval of the underlying file descriptor from libuv handles across different handle types."
+        },
+        {
+            "id": 361,
+            "name": "test/test-homedir.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-homedir.c",
+            "Functionality": "Validates the `uv_os_homedir` function to ensure it correctly retrieves the user's home directory path across different platforms."
+        },
+        {
+            "id": 362,
+            "name": "test/test-hrtime.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-hrtime.c",
+            "Functionality": "Tests the `uv_hrtime` function for high-resolution time measurements, ensuring its accuracy and reliability in different scenarios."
+        },
+        {
+            "id": 363,
+            "name": "test/test-loop-close.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-loop-close.c",
+            "Functionality": "Tests the behavior of closing the event loop in libuv. It ensures that the event loop can be stopped and restarted correctly, and verifies the handling of busy state during loop closure."
+        },
+        {
+            "id": 364,
+            "name": "test/test-idle.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-idle.c",
+            "Functionality": "Verifies the functionality of `uv_idle_t`, `uv_check_t`, and `uv_timer_t` handles. Ensures correct execution of idle callbacks, check callbacks, and timers."
+        },
+        {
+            "id": 365,
+            "name": "test/test-osx-select.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-osx-select.c",
+            "Functionality": "Tests the compatibility and behavior of libuv's select functionality on macOS. It verifies that select operations work correctly and handle various I/O events as expected on macOS systems."
+        },
+        {
+            "id": 366,
+            "name": "test/test-loop-configure.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-loop-configure.c",
+            "Functionality": "Validates the configuration of the event loop using `uv_loop_configure`. It checks if signal blocking settings are applied correctly and ensures that timers and other event loop functionalities operate as expected."
+        },
+        {
+            "id": 367,
+            "name": "test/test-pass-always.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pass-always.c",
+            "Functionality": "A simple test case that always passes. It serves as a basic check to ensure that the test framework is functioning correctly and is able to run tests."
+        },
+        {
+            "id": 368,
+            "name": "test/test-pipe-bind-error.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-bind-error.c",
+            "Functionality": "Tests error handling when binding to invalid pipe names. It verifies that appropriate errors are raised when attempting to bind or connect to a non-existent or invalid pipe."
+        },
+        {
+            "id": 369,
+            "name": "test/test-pipe-close-stdout-read-stdin.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-close-stdout-read-stdin.c",
+            "Functionality": "Tests the behavior of closing the standard output while reading from standard input via pipes. It ensures that the program correctly handles pipe operations and verifies the state of pipes after closing standard output."
+        },
+        {
+            "id": 370,
+            "name": "test/test-pipe-connect-error.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-connect-error.c",
+            "Functionality": "Verifies the error handling of pipe connections with invalid or erroneous pipe names. It checks that connection attempts to invalid pipes result in appropriate errors and that error handling mechanisms work as expected."
+        },
+        {
+            "id": 371,
+            "name": "test/test-pipe-connect-multiple.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-connect-multiple.c",
+            "Functionality": "Tests multiple clients connecting to a single server pipe, ensuring that all connections are handled correctly and that the server can manage multiple concurrent connections."
+        },
+        {
+            "id": 372,
+            "name": "test/test-pipe-connect-prepare.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-connect-prepare.c",
+            "Functionality": "Validates the behavior of `uv_pipe_connect` within the `uv_prepare_t` callback, focusing on connection attempts to invalid pipe paths and handling errors gracefully."
+        },
+        {
+            "id": 373,
+            "name": "test/test-pipe-getsockname.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-getsockname.c",
+            "Functionality": "Verifies the correct operation of `uv_pipe_getsockname` and `uv_pipe_getpeername` functions across different types of pipes, including named and abstract pipes."
+        },
+        {
+            "id": 374,
+            "name": "test/test-pipe-pending-instances.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-pending-instances.c",
+            "Functionality": "Tests the pending instance count behavior for pipes, checking that the correct number of pending instances is reported after various pipe operations."
+        },
+        {
+            "id": 375,
+            "name": "test/test-pipe-sendmsg.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-pipe-sendmsg.c",
+            "Functionality": "Tests sending messages through pipes using `libuv`, ensuring that message sending and receiving works correctly and handles various edge cases."
+        },
+        {
+            "id": 376,
+            "name": "test/test-process-priority.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-process-priority.c",
+            "Functionality": "Tests the setting and retrieval of process priority using `uv_os_setpriority` and `uv_os_getpriority`, ensuring that process priority adjustments work as expected."
+        },
+        {
+            "id": 377,
+            "name": "test/test-process-title-threadsafe.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-process-title-threadsafe.c",
+            "Functionality": "Tests the thread safety of setting and getting process titles using libuv. It ensures that the process title can be modified and queried correctly across multiple threads."
+        },
+        {
+            "id": 378,
+            "name": "test/test-process-title.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-process-title.c",
+            "Functionality": "Tests the basic functionality of setting and getting process titles in a single-threaded context using libuv. This includes verifying that the process title is correctly updated and retrieved."
+        },
+        {
+            "id": 379,
+            "name": "test/test-random.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-random.c",
+            "Functionality": "Tests the random number generation capabilities of libuv. It validates that the random numbers are generated correctly and meet expected randomness criteria."
+        },
+        {
+            "id": 380,
+            "name": "test/test-readable-on-eof.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-readable-on-eof.c",
+            "Functionality": "Tests the behavior of libuv streams when the end-of-file (EOF) is reached. It ensures that the stream behaves as expected, including proper handling of readability checks after EOF."
+        },
+        {
+            "id": 381,
+            "name": "test/test-run-nowait.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-run-nowait.c",
+            "Functionality": "Tests the behavior of libuv's event loop when run in UV_RUN_NOWAIT mode. It checks that the event loop processes pending events correctly without blocking."
+        },
+        {
+            "id": 382,
+            "name": "test/test-run-once.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-run-once.c",
+            "Functionality": "Tests the behavior of libuv's event loop with idle handles. It verifies that the loop can process idle handles correctly and performs as expected when run only once."
+        },
+        {
+            "id": 383,
+            "name": "test/test-signal-multiple-loops.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-signal-multiple-loops.c",
+            "Functionality": "Tests signal handling across multiple event loops in libuv. It ensures that signals are properly delivered and handled when multiple event loops are used."
+        },
+        {
+            "id": 384,
+            "name": "test/test-signal-pending-on-close.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-signal-pending-on-close.c",
+            "Functionality": "Tests the handling of pending signals when a pipe is closed. It verifies that signals like `SIGPIPE` are properly handled and that the pipe and signal handles are cleaned up correctly."
+        },
+        {
+            "id": 385,
+            "name": "test/test-signal.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-signal.c",
+            "Functionality": "Tests signal handling in libuv on different platforms (Unix and Windows). It verifies that signals are properly caught and handled according to the platform's specifications."
+        },
+        {
+            "id": 386,
+            "name": "test/test-socket-buffer-size.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-socket-buffer-size.c",
+            "Functionality": "Tests the behavior of `libuv`'s socket buffer size settings, ensuring that buffer sizes can be correctly retrieved and set for TCP sockets."
+        },
+        {
+            "id": 387,
+            "name": "test/test-spawn.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-spawn.c",
+            "Functionality": "Verifies the process spawning capabilities of `libuv`, including process creation, management, and handling of standard input/output streams."
+        },
+        {
+            "id": 388,
+            "name": "test/test-stdio-over-pipes.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-stdio-over-pipes.c",
+            "Functionality": "Tests the functionality of standard input/output operations over pipes in `libuv`, checking proper data flow and error handling through pipes."
+        },
+        {
+            "id": 389,
+            "name": "test/test-strscpy.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-strscpy.c",
+            "Functionality": "Tests the `uv__strscpy` function for safe string copying, ensuring that the function handles edge cases and buffers correctly."
+        },
+        {
+            "id": 390,
+            "name": "test/test-strtok.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-strtok.c",
+            "Functionality": "Tests the functionality of string tokenization using `libuv`'s custom implementation of `strtok`, checking correct token extraction and error conditions."
+        },
+        {
+            "id": 391,
+            "name": "test/test-macros.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-macros.c"
+        },
+        {
+            "id": 392,
+            "name": "test/test-timer-again.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-timer-again.c",
+            "Functionality": "Tests the functionality of restarting timers in libuv, ensuring that timers can be set to trigger after a specified interval."
+        },
+        {
+            "id": 393,
+            "name": "test/test-timer-from-check.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-timer-from-check.c",
+            "Functionality": "Verifies the sequence of callbacks using prepare and check handles along with timers in libuv, ensuring proper scheduling."
+        },
+        {
+            "id": 394,
+            "name": "test/test-timer.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-timer.c",
+            "Functionality": "Tests the basic functionality of timers in libuv, including the creation, start, and proper execution of timer callbacks."
+        },
+        {
+            "id": 395,
+            "name": "test/test-tmpdir.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-tmpdir.c",
+            "Functionality": "Tests the retrieval of the system's temporary directory path in libuv, ensuring the correct handling of platform-specific temporary directories."
+        },
+        {
+            "id": 396,
+            "name": "test/test-uname.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-uname.c",
+            "Functionality": "This file tests the 'uv_os_uname' function, which retrieves hostname and system information. It ensures that the function behaves correctly when NULL is passed and validates its results against the system 'uname' function on non-Windows platforms. It conducts checks to confirm that the output structure of 'uv_os_uname' matches system expectations regarding OS name and version."
+        },
+        {
+            "id": 397,
+            "name": "test/test-walk-handles.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.Test.test/test-walk-handles.c",
+            "Functionality": "This file tests the capability of the libuv library to traverse and walk through active handles in an event loop. It verifies that the right handles, such as timers, are encountered during the traversal. The main aspects of the test involve initializing a timer, checking for its presence during a traversal callback, and confirming proper invocation of associated close callbacks."
+        }
+    ]
+}

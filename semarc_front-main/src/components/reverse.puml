@@ -1,0 +1,15 @@
+@startuml
+node "Signal-Handler" {
+  [libuv Network and Resource Management Test Suite] as 数据库集群
+  [缓存服务] as 缓存服务
+}
+
+node "业务逻辑层" {
+  [订单系统] as 订单系统
+  [库存管理] as 库存管理
+}
+
+数据库集群 <--> 缓存服务
+数据库集群 --> 订单系统 : 12
+订单系统 --> 库存管理
+@enduml
