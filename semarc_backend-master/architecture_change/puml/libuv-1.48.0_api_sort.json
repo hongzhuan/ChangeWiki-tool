@@ -1,0 +1,25 @@
+[libuv Platform Compatibility and Performance Tests] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 858
+[libuv TCP/Socket and Event Loop Validation] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 832
+[libuv Core Functionality and Performance Testing Suite] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 714
+[libuv Asynchronous Benchmarking and Event Handling Suite] --> [libuv Network and I/O Testing Suite]: 705
+[libuv Network and I/O Testing Suite] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 652
+[libuv Network Protocols and Error Handling Tests] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 454
+[libuv Core Functionality and Performance Testing Suite] --> [libuv Network and I/O Testing Suite]: 198
+[libuv Asynchronous Benchmarking and Event Handling Suite] --> [libuv Core Functionality and Performance Testing Suite]: 174
+[libuv TCP/Socket and Event Loop Validation] --> [libuv Network and I/O Testing Suite]: 122
+[libuv-network-and-io-tests] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 114
+[libuv Platform Compatibility and Performance Tests] --> [libuv Network and I/O Testing Suite]: 82
+[Cross-Platform Asynchronous I/O and Event Management Module] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 80
+[libuv Functionality and Performance Tests] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 66
+[libuv Network Protocols and Error Handling Tests] --> [libuv Network and I/O Testing Suite]: 38
+[libuv Core Functionality and Performance Testing Suite] --> [libuv Platform Compatibility and Performance Tests]: 35
+[libuv Functionality & System Integration Testing Suite] --> [libuv Asynchronous Benchmarking and Event Handling Suite]: 22
+[libuv Asynchronous Benchmarking and Event Handling Suite] --> [libuv Platform Compatibility and Performance Tests]: 22
+[libuv Asynchronous Benchmarking and Event Handling Suite] --> [libuv TCP/Socket and Event Loop Validation]: 13
+[libuv Asynchronous Benchmarking and Event Handling Suite] --> [libuv-network-and-io-tests]: 12
+[libuv-network-and-io-tests] --> [libuv Network and I/O Testing Suite]: 8
+[libuv Functionality and Performance Tests] --> [libuv Network and I/O Testing Suite]: 8
+[libuv Asynchronous Benchmarking and Event Handling Suite] --> [libuv Network Protocols and Error Handling Tests]: 6
+[libuv Core Functionality and Performance Testing Suite] --> [libuv Network Protocols and Error Handling Tests]: 2
+[libuv Functionality & System Integration Testing Suite] --> [libuv Network and I/O Testing Suite]: 2
+[Cross-Platform Asynchronous I/O and Event Management Module] --> [libuv Network and I/O Testing Suite]: 2

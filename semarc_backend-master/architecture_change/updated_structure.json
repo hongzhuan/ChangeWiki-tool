@@ -1,0 +1,1827 @@
+{
+    "architecture_pattern": "Event-Driven Architecture (EDA)",
+    "structure": [
+        {
+            "id": 0,
+            "name": "Networking",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "Networking",
+            "Functionality": "Networking components are responsible for managing the different network protocols (TCP, UDP, etc.) that the system supports. These components raise events when network operations, such as data transmission or connection establishment, complete.",
+            "color": "blue"
+        },
+        {
+            "id": 1,
+            "name": "libuv Asynchronous I/O and Networking Tests",
+            "category": "cluster",
+            "parentId": 0,
+            "qualifiedName": "Networking.libuv Asynchronous I/O and Networking Tests",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 2,
+            "name": "Event Loop",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "Event Loop",
+            "Functionality": "The event loop is responsible for managing asynchronous tasks by listening for and dispatching events. It handles multiple I/O, networking, and file operations without blocking the system. The loop is central to the architecture, ensuring high throughput and low latency during event processing.",
+            "color": "blue"
+        },
+        {
+            "id": 3,
+            "name": "libuv Network and Event Loop Test Suite",
+            "category": "cluster",
+            "parentId": 2,
+            "qualifiedName": "Event Loop.libuv Network and Event Loop Test Suite",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 4,
+            "name": "Network Stream and Performance Testing",
+            "category": "cluster",
+            "parentId": 2,
+            "qualifiedName": "Event Loop.Network Stream and Performance Testing",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 5,
+            "name": "libuv Fork Behavior Tester",
+            "category": "cluster",
+            "parentId": 2,
+            "qualifiedName": "Event Loop.libuv Fork Behavior Tester",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 6,
+            "name": "UDP Connection Validation Module",
+            "category": "cluster",
+            "parentId": 2,
+            "qualifiedName": "Event Loop.UDP Connection Validation Module",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 7,
+            "name": "Error Handling",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "Error Handling",
+            "Functionality": "Error Handling components are designed to manage system errors asynchronously. When an error occurs, an event is raised to handle it, ensuring that error handling does not block system operations.",
+            "color": "blue"
+        },
+        {
+            "id": 8,
+            "name": "System and Network Utilities",
+            "category": "cluster",
+            "parentId": 7,
+            "qualifiedName": "Error Handling.System and Network Utilities",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 9,
+            "name": "MultiLoopSignalTest",
+            "category": "cluster",
+            "parentId": 7,
+            "qualifiedName": "Error Handling.MultiLoopSignalTest",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 10,
+            "name": "I/O Managers",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "I/O Managers",
+            "Functionality": "I/O Managers handle asynchronous I/O operations like reading and writing to files or network sockets. They raise events when tasks are completed, which are then processed by the event loop to trigger further actions, ensuring non-blocking behavior in the system.",
+            "color": "blue"
+        },
+        {
+            "id": 11,
+            "name": "libuv Network & I/O Test Suite",
+            "category": "cluster",
+            "parentId": 10,
+            "qualifiedName": "I/O Managers.libuv Network & I/O Test Suite",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 12,
+            "name": "Network Service and Compute Module",
+            "category": "cluster",
+            "parentId": 10,
+            "qualifiedName": "I/O Managers.Network Service and Compute Module",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 13,
+            "name": "LoopPerformanceTester",
+            "category": "cluster",
+            "parentId": 10,
+            "qualifiedName": "I/O Managers.LoopPerformanceTester",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 14,
+            "name": "Plugin Integration",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "Plugin Integration",
+            "Functionality": "Plugin Integration allows third-party plugins to extend the core system. Plugins subscribe to events such as file read/write operations or incoming network messages and perform custom logic in response.",
+            "color": "blue"
+        },
+        {
+            "id": 15,
+            "name": "Network and Event Loop Utilities",
+            "category": "cluster",
+            "parentId": 14,
+            "qualifiedName": "Plugin Integration.Network and Event Loop Utilities",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 16,
+            "name": "libuv Functionality Testing Suite",
+            "category": "cluster",
+            "parentId": 14,
+            "qualifiedName": "Plugin Integration.libuv Functionality Testing Suite",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 17,
+            "name": "Unix System Utilities and Asynchronous Operations",
+            "category": "cluster",
+            "parentId": 14,
+            "qualifiedName": "Plugin Integration.Unix System Utilities and Asynchronous Operations",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 18,
+            "name": "Thread Management",
+            "category": "component",
+            "parentId": -1,
+            "qualifiedName": "Thread Management",
+            "Functionality": "Thread Management components are responsible for handling the concurrent execution of multiple tasks. They utilize concurrency primitives like mutexes, semaphores, and condition variables to manage and synchronize threads in response to events.",
+            "color": "blue"
+        },
+        {
+            "id": 19,
+            "name": "Multi-Accept Benchmark",
+            "category": "cluster",
+            "parentId": 18,
+            "qualifiedName": "Thread Management.Multi-Accept Benchmark",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 20,
+            "name": "Pipe I/O Redirection Test",
+            "category": "cluster",
+            "parentId": 18,
+            "qualifiedName": "Thread Management.Pipe I/O Redirection Test",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 21,
+            "name": "UDP Test",
+            "category": "cluster",
+            "parentId": 18,
+            "qualifiedName": "Thread Management.UDP Test",
+            "Functionality": "none",
+            "color": "blue"
+        },
+        {
+            "id": 22,
+            "name": "test/benchmark-fs-stat.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-fs-stat.c",
+            "color": "green"
+        },
+        {
+            "id": 23,
+            "name": "test/test-tcp-read-stop-start.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-read-stop-start.c",
+            "Functionality": "This test checks the behavior of starting and stopping reading on a TCP socket using `uv_read_start()` and `uv_read_stop()`. It verifies that stopping and restarting the read operation works as expected, including edge cases such as unexpected socket states.",
+            "color": "green"
+        },
+        {
+            "id": 25,
+            "name": "test/benchmark-sizes.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-sizes.c",
+            "Functionality": "This file benchmarks the size of various libuv structures to understand their memory footprint, ensuring the efficient allocation and usage of resources in the system.",
+            "color": "green"
+        },
+        {
+            "id": 26,
+            "name": "test/benchmark-thread.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-thread.c",
+            "Functionality": "This file benchmarks the performance of creating and managing a large number of threads asynchronously using libuv, testing system scalability in handling parallel workloads.",
+            "color": "green"
+        },
+        {
+            "id": 29,
+            "name": "test/test-udp-multicast-join.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-multicast-join.c",
+            "Functionality": "This test case verifies that the `libuv` library can join a multicast group and receive messages from it. The focus is on verifying that the library handles multicast joining and packet reception correctly on the UDP layer.",
+            "color": "green"
+        },
+        {
+            "id": 31,
+            "name": "test/test-udp-send-immediate.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-send-immediate.c",
+            "Functionality": "The file tests the behavior of sending UDP packets immediately, without delays. It ensures that data can be sent without issues in real-time and checks for any delays or inefficiencies in sending datagrams.",
+            "color": "green"
+        },
+        {
+            "id": 32,
+            "name": "test/test-thread.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-thread.c",
+            "Functionality": "This file is responsible for testing libuv's thread handling functionalities. It focuses on creating and managing threads, as well as testing various thread synchronization and interaction scenarios using libuv's API.",
+            "color": "green"
+        },
+        {
+            "id": 33,
+            "name": "test/test-udp-send-unreachable.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-send-unreachable.c",
+            "Functionality": "This test verifies the behavior of sending UDP packets to an unreachable address. It checks that the library handles errors correctly when the destination address is unreachable and that appropriate error codes are returned.",
+            "color": "green"
+        },
+        {
+            "id": 41,
+            "name": "test/benchmark-async-pummel.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-async-pummel.c",
+            "color": "green"
+        },
+        {
+            "id": 42,
+            "name": "docs/code/proc-streams/test.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.docs/code/proc-streams/test.c",
+            "color": "green"
+        },
+        {
+            "id": 45,
+            "name": "test/test-udp-multicast-ttl.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-multicast-ttl.c",
+            "Functionality": "This file tests the ability to set the Time-to-Live (TTL) option for UDP multicast packets. It ensures that TTL values are respected when sending multicast packets and that the library handles TTL-related edge cases properly.",
+            "color": "green"
+        },
+        {
+            "id": 46,
+            "name": "test/run-benchmarks.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/run-benchmarks.c",
+            "Functionality": "This file orchestrates the execution of various benchmark tests in the project, managing test execution and ensuring that results are properly recorded and analyzed.",
+            "color": "green"
+        },
+        {
+            "id": 47,
+            "name": "test/benchmark-spawn.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-spawn.c",
+            "Functionality": "This file tests the performance of spawning multiple child processes using libuv, measuring the time and system resources required to handle a large number of process creations.",
+            "color": "green"
+        },
+        {
+            "id": 48,
+            "name": "test/benchmark-million-timers.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-million-timers.c",
+            "color": "green"
+        },
+        {
+            "id": 49,
+            "name": "test/test-fs-open-flags.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-fs-open-flags.c",
+            "Functionality": "This file tests the handling of various file open flags in libuv's `uv_fs_open()` function, ensuring that the correct behavior occurs when different flags are used to open files in asynchronous I/O operations.",
+            "color": "green"
+        },
+        {
+            "id": 52,
+            "name": "test/test-tty-escape-sequence-processing.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tty-escape-sequence-processing.c",
+            "Functionality": "This file tests the handling of escape sequences in terminal input. It ensures that special sequences (like those used for color changes or cursor movement) are processed correctly in the terminal input stream.",
+            "color": "green"
+        },
+        {
+            "id": 53,
+            "name": "test/test-run-nowait.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-run-nowait.c",
+            "Functionality": "This file tests the behavior of the event loop when running with the `UV_RUN_NOWAIT` mode. It verifies that the event loop can be executed without blocking or waiting for events, and checks that no unintended blocking occurs when no events are pending.",
+            "color": "green"
+        },
+        {
+            "id": 54,
+            "name": "test/test-poll-close.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-poll-close.c",
+            "Functionality": "Tests the behavior of closing a poll handle (`uv_poll_t`) on both read and write operations. It ensures that when a socket is closed, the poll handle is correctly removed from the event loop and that no unintended events are triggered afterward.",
+            "color": "green"
+        },
+        {
+            "id": 55,
+            "name": "test/test-test-macros.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-test-macros.c",
+            "Functionality": "This file tests the correctness of macros and string comparison functionalities in the project. It checks if certain macros expand and operate as expected, especially under different compilation conditions.",
+            "color": "green"
+        },
+        {
+            "id": 56,
+            "name": "test/test-tcp-close.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-close.c",
+            "Functionality": "This file tests TCP connection closure behavior. It checks that when a connection is closed, all outstanding write operations are properly completed and the connection is cleaned up, ensuring there are no resource leaks.",
+            "color": "green"
+        },
+        {
+            "id": 58,
+            "name": "test/test-udp-multicast-interface6.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-multicast-interface6.c",
+            "Functionality": "Similar to the previous test, this file tests UDP multicast functionality specifically over IPv6. It ensures that the library can correctly handle multicast group membership and packet reception over IPv6 networks.",
+            "color": "green"
+        },
+        {
+            "id": 59,
+            "name": "src/unix/pthread-fixes.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.src/unix/pthread-fixes.c",
+            "Functionality": "This file contains fixes and workarounds for issues related to POSIX threads (pthreads) on Unix-like systems. It ensures that multi-threading functions work correctly across different platforms and compiler environments.",
+            "color": "yellow"
+        },
+        {
+            "id": 60,
+            "name": "test/test-udp-connect6.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-connect6.c",
+            "Functionality": "This file tests the behavior of UDP communication over IPv6. It specifically focuses on testing the `uv_udp_connect()` and `uv_udp_send()` functions for sending and receiving datagrams, ensuring compatibility with IPv6 networking.",
+            "color": "green"
+        },
+        {
+            "id": 62,
+            "name": "include/uv/stdint-msvc2008.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.include/uv/stdint-msvc2008.h",
+            "Functionality": "Provides type definitions and compatibility for standard integer types in MSVC 2008, ensuring that the code can use fixed-width integers across platforms.",
+            "color": "yellow"
+        },
+        {
+            "id": 66,
+            "name": "test/test-socket-buffer-size.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-socket-buffer-size.c",
+            "Functionality": "This file tests the socket buffer size handling functionality in libuv, specifically for TCP and UDP sockets. It ensures that the receive buffer size can be set and retrieved correctly, verifying correct socket behavior across different platforms and configurations.",
+            "color": "green"
+        },
+        {
+            "id": 67,
+            "name": "test/test-embed.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-embed.c",
+            "Functionality": "This file tests embedding libuv in other applications. It verifies that libuv can be correctly initialized and run within a non-standard environment or application, ensuring compatibility with embedded use cases.",
+            "color": "green"
+        },
+        {
+            "id": 68,
+            "name": "test/test-poll-close-doesnt-corrupt-stack.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-poll-close-doesnt-corrupt-stack.c",
+            "Functionality": "Verifies that closing a `uv_poll_t` handle does not corrupt the stack or cause memory issues. This is crucial to ensure that libuv's event-driven model handles resource cleanup correctly and does not lead to stack corruption.",
+            "color": "green"
+        },
+        {
+            "id": 69,
+            "name": "test/test-signal.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-signal.c",
+            "Functionality": "This file tests signal handling in libuv. It ensures that signals (e.g., SIGINT, SIGTERM) are captured and processed correctly by the event loop, and verifies that the signal handling mechanism works as expected across different platforms and event loop configurations.",
+            "color": "green"
+        },
+        {
+            "id": 70,
+            "name": "test/test-strtok.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-strtok.c",
+            "Functionality": "This file tests the behavior of the `strtok` string tokenizer in libuv. It checks various scenarios for string tokenization, verifying that tokens are correctly extracted and that edge cases (such as empty strings or multiple delimiters) are handled appropriately.",
+            "color": "green"
+        },
+        {
+            "id": 71,
+            "name": "test/benchmark-queue-work.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-queue-work.c",
+            "Functionality": "This file benchmarks libuv\u9225\u6a9a work queue functionality by creating and executing numerous asynchronous tasks in parallel to evaluate how efficiently the system can manage and process queued tasks.",
+            "color": "green"
+        },
+        {
+            "id": 72,
+            "name": "test/test-multiple-listen.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-multiple-listen.c",
+            "Functionality": "This test validates the ability of libuv to handle multiple listen calls on the same server. It ensures that the event loop can successfully accept and process multiple connections on different ports or services without errors.",
+            "color": "green"
+        },
+        {
+            "id": 73,
+            "name": "docs/code/tty-gravity/main.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.docs/code/tty-gravity/main.c",
+            "Functionality": "Extends the functionality of terminal communication, focusing on enhanced TTY handling, potentially with features like advanced input processing, customized output formatting, or interactive user interfaces.",
+            "color": "green"
+        },
+        {
+            "id": 74,
+            "name": "test/runner-unix.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/runner-unix.h",
+            "color": "green"
+        },
+        {
+            "id": 75,
+            "name": "src/strtok.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.src/strtok.h",
+            "Functionality": "This header defines a custom implementation of the string tokenization function, typically used for splitting strings based on delimiters, providing a robust alternative to the standard `strtok` function.",
+            "color": "green"
+        },
+        {
+            "id": 76,
+            "name": "src/strtok.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.src/strtok.c",
+            "Functionality": "Implements tokenization functions, specifically string splitting and parsing based on delimiters, which is useful for handling text input in various formats.",
+            "color": "green"
+        },
+        {
+            "id": 78,
+            "name": "test/test-udp-ipv6.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-udp-ipv6.c",
+            "Functionality": "The file tests UDP operations over IPv6, specifically ensuring that the `uv_udp_send()` function can send and receive packets over an IPv6 network. It includes validation for various IPv6 address formats and behaviors.",
+            "color": "green"
+        },
+        {
+            "id": 79,
+            "name": "test/test-tcp-unexpected-read.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-unexpected-read.c",
+            "Functionality": "This test checks how the application behaves when unexpected data is read from a TCP socket. It ensures that the event loop handles such reads correctly and that the application can process or discard unexpected incoming data without failure.",
+            "color": "green"
+        },
+        {
+            "id": 80,
+            "name": "test/runner.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/runner.h",
+            "color": "green"
+        },
+        {
+            "id": 81,
+            "name": "test/task.h",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/task.h",
+            "color": "green"
+        },
+        {
+            "id": 82,
+            "name": "test/runner-win.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/runner-win.c",
+            "Functionality": "This file offers platform-specific functionality for Windows systems, handling process management and other platform-dependent details to ensure smooth test execution on Windows.",
+            "color": "green"
+        },
+        {
+            "id": 83,
+            "name": "test/runner.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/runner.c",
+            "Functionality": "This file provides the main test runner functionality, coordinating the execution of tests and benchmarks across platforms, managing test results, and ensuring that the testing infrastructure is functioning correctly.",
+            "color": "green"
+        },
+        {
+            "id": 84,
+            "name": "test/runner-unix.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/runner-unix.c",
+            "Functionality": "This file provides platform-specific functionality for Unix systems, particularly focusing on test execution and process management, ensuring that the testing framework works on Unix-like platforms.",
+            "color": "green"
+        },
+        {
+            "id": 85,
+            "name": "test/benchmark-udp-pummel.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-udp-pummel.c",
+            "Functionality": "This file tests UDP communication performance by sending and receiving large numbers of UDP packets over a network, benchmarking packet handling efficiency in a high-volume environment.",
+            "color": "green"
+        },
+        {
+            "id": 86,
+            "name": "test/run-tests.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/run-tests.c",
+            "Functionality": "This file is responsible for executing a suite of unit and integration tests. It coordinates the execution of individual tests to ensure that all aspects of the system are functioning correctly.",
+            "color": "green"
+        },
+        {
+            "id": 88,
+            "name": "test/test-tcp-try-write-error.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-try-write-error.c",
+            "Functionality": "This test simulates an error scenario when attempting to write to a TCP socket. It checks that the application handles errors such as a failed write operation properly and that the correct error codes or callbacks are triggered.",
+            "color": "green"
+        },
+        {
+            "id": 90,
+            "name": "test/test-tcp-try-write.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-try-write.c",
+            "Functionality": "This test verifies the functionality of `uv_try_write()`. It checks whether the function can successfully attempt to write to a TCP socket without blocking and handles scenarios where the write operation cannot be immediately completed.",
+            "color": "green"
+        },
+        {
+            "id": 91,
+            "name": "test/benchmark-tcp-write-batch.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-tcp-write-batch.c",
+            "Functionality": "This benchmark measures the throughput of TCP data transmission under high load, sending a batch of data over a TCP connection to evaluate how efficiently the system handles bulk writes.",
+            "color": "green"
+        },
+        {
+            "id": 93,
+            "name": "test/benchmark-million-async.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/benchmark-million-async.c",
+            "color": "green"
+        },
+        {
+            "id": 95,
+            "name": "test/test-tcp-write-fail.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-write-fail.c",
+            "Functionality": "This test simulates a failure during a write operation on a TCP socket. It ensures that the application correctly handles the failure, cleaning up resources and reporting appropriate error messages or codes.",
+            "color": "green"
+        },
+        {
+            "id": 96,
+            "name": "test/test-pipe-set-non-blocking.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-pipe-set-non-blocking.c",
+            "Functionality": "Validates the non-blocking behavior of pipe operations in libuv. The test checks that setting pipes to non-blocking mode behaves as expected, ensuring that operations do not block the event loop even when the pipe is full.",
+            "color": "green"
+        },
+        {
+            "id": 97,
+            "name": "test/test-ipc-send-recv.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-ipc-send-recv.c",
+            "Functionality": "This file tests the send and receive functionality of IPC in libuv. It ensures that data can be correctly sent and received between processes via pipes, verifying the integrity of IPC mechanisms.",
+            "color": "green"
+        },
+        {
+            "id": 99,
+            "name": "docs/code/cgi/tick.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.docs/code/cgi/tick.c",
+            "color": "green"
+        },
+        {
+            "id": 103,
+            "name": "test/test-tcp-close-accept.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-tcp-close-accept.c",
+            "Functionality": "This file tests TCP server behavior when accepting connections and closing them. It ensures that the server can accept incoming connections, handle client disconnections correctly, and clean up resources after a connection is closed.",
+            "color": "green"
+        },
+        {
+            "id": 105,
+            "name": "test/test-delayed-accept.c",
+            "category": "item",
+            "parentId": 1,
+            "qualifiedName": "1.libuv Asynchronous I/O and Networking Tests.test/test-delayed-accept.c",
+            "Functionality": "This file tests the delayed accept functionality in libuv, specifically testing a scenario where a TCP server delays accepting incoming connections, ensuring that connections are handled correctly after the delay.",
+            "color": "green"
+        },
+        {
+            "id": 107,
+            "name": "test/test-loop-configure.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-loop-configure.c",
+            "Functionality": "This test case examines how the event loop can be configured and modified in different scenarios. It focuses on testing specific configurations that might affect the loop's behavior, such as timeouts or adjustments to the event loop settings.",
+            "color": "green"
+        },
+        {
+            "id": 111,
+            "name": "include/uv/win.h",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.include/uv/win.h",
+            "Functionality": "Defines platform-specific types and macros for Windows, ensuring compatibility with Windows Sockets API, threading, and asynchronous I/O operations within libuv.",
+            "color": "green"
+        },
+        {
+            "id": 113,
+            "name": "test/test-tcp-writealot.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-writealot.c",
+            "Functionality": "This file contains tests that ensure TCP sockets can handle large volumes of data being written to them. It tests edge cases such as large message sizes, non-blocking writes, and error handling to verify the robustness of the socket operations in libuv.",
+            "color": "green"
+        },
+        {
+            "id": 116,
+            "name": "test/test-pipe-sendmsg.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-pipe-sendmsg.c",
+            "Functionality": "Tests sending file descriptors through Unix domain sockets using `sendmsg`. This is important for scenarios where file descriptors need to be shared between processes, ensuring that `libuv` correctly handles the transmission and receipt of such descriptors over pipes.",
+            "color": "green"
+        },
+        {
+            "id": 117,
+            "name": "test/test-process-title-threadsafe.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-process-title-threadsafe.c",
+            "Functionality": "This file tests the thread-safety of `uv_get_process_title` and `uv_set_process_title` functions in the libuv library. It verifies that process titles can be safely set and retrieved from multiple threads concurrently without introducing race conditions or crashes.",
+            "color": "green"
+        },
+        {
+            "id": 119,
+            "name": "test/test-tcp-oob.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-oob.c",
+            "Functionality": "This test focuses on the handling of Out-of-Band (OOB) data in TCP communication. It ensures that OOB data, typically used for urgent or priority messages, is processed correctly by the TCP stack, and it verifies how the application reacts to such data being sent and received.",
+            "color": "green"
+        },
+        {
+            "id": 120,
+            "name": "test/test-tcp-connect-error.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-connect-error.c",
+            "Functionality": "This file tests the handling of errors during the TCP connection attempt. It verifies that when a connection fails (e.g., due to an invalid address or port), libuv triggers the appropriate error callback and handles the failure gracefully.",
+            "color": "green"
+        },
+        {
+            "id": 121,
+            "name": "test/test-poll-closesocket.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-poll-closesocket.c",
+            "Functionality": "Tests the proper handling of socket closure in conjunction with poll handles (`uv_poll_t`). It checks that when a socket is closed, the system properly cleans up resources and does not cause any errors or unexpected behavior when interacting with the poll handle.",
+            "color": "green"
+        },
+        {
+            "id": 122,
+            "name": "test/test-tcp-connect-error-after-write.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-connect-error-after-write.c",
+            "Functionality": "This file tests the scenario where a TCP connection attempt results in an error after write operations have been initiated. It ensures that libuv properly handles connection errors (e.g., `ECONNREFUSED`) after attempting to write data, and triggers appropriate error handling callbacks.",
+            "color": "green"
+        },
+        {
+            "id": 123,
+            "name": "test/test-pipe-bind-error.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-pipe-bind-error.c",
+            "Functionality": "This test case verifies the handling of errors when trying to bind a pipe address that is already in use or invalid. It ensures that libuv correctly returns errors like `UV_EADDRINUSE` and `UV_EINVAL` when binding pipes fails.",
+            "color": "green"
+        },
+        {
+            "id": 124,
+            "name": "test/test-semaphore.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-semaphore.c",
+            "Functionality": "This file tests the functionality of semaphores and mutexes in libuv. It focuses on validating synchronization primitives, ensuring correct behavior when multiple threads are used to signal and wait on resources, and verifying thread safety for critical sections.",
+            "color": "green"
+        },
+        {
+            "id": 125,
+            "name": "test/test-eintr-handling.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-eintr-handling.c",
+            "Functionality": "This file tests how libuv handles the `EINTR` (interrupted system call) error. It ensures that system calls interrupted by signals are retried and handled correctly in libuv's event loop, verifying that the library behaves as expected under such conditions.",
+            "color": "green"
+        },
+        {
+            "id": 126,
+            "name": "test/test-ping-pong.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-ping-pong.c",
+            "Functionality": "This test simulates a simple 'ping-pong' communication protocol over TCP or other transport mechanisms. It ensures that data can be correctly sent and received between client and server, verifying the core message-passing functionality.",
+            "color": "green"
+        },
+        {
+            "id": 128,
+            "name": "test/test-osx-select.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-osx-select.c",
+            "Functionality": "This test case is specific to macOS and tests the behavior of `select` on file descriptors using libuv. It ensures that file descriptors can be managed properly for I/O operations in macOS environments, with particular focus on managing input from terminal devices.",
+            "color": "green"
+        },
+        {
+            "id": 129,
+            "name": "test/test-queue-foreach-delete.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-queue-foreach-delete.c",
+            "Functionality": "This test ensures the proper functioning of libuv's event loop when iterating over queues and deleting elements during iteration. It focuses on verifying that the event loop can safely handle the removal of items from queues without causing corruption or unexpected behavior.",
+            "color": "green"
+        },
+        {
+            "id": 130,
+            "name": "test/benchmark-pump.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/benchmark-pump.c",
+            "Functionality": "This file benchmarks the performance of a server handling multiple TCP or named pipe connections, focusing on connection establishment and message throughput using asynchronous I/O operations in libuv.",
+            "color": "green"
+        },
+        {
+            "id": 131,
+            "name": "test/test-pipe-connect-multiple.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-pipe-connect-multiple.c",
+            "Functionality": "Tests the ability to handle multiple client connections to a single pipe server using libuv. It ensures that multiple clients can connect, send data, and receive responses correctly, testing both event loop handling and concurrent I/O operations.",
+            "color": "green"
+        },
+        {
+            "id": 132,
+            "name": "test/test-poll.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-poll.c",
+            "Functionality": "Tests the fundamental functionality of `uv_poll_t` handles in libuv. It ensures that the event loop correctly monitors and responds to read and write events on sockets, testing various edge cases and potential issues like timeouts, data availability, and error handling.",
+            "color": "green"
+        },
+        {
+            "id": 136,
+            "name": "test/test-close-fd.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-close-fd.c",
+            "Functionality": "This file tests the handling of file descriptors (FD) in libuv, specifically focusing on closing FDs and ensuring that associated resources (like pipes) are properly cleaned up, verifying that `uv_close` works as expected.",
+            "color": "green"
+        },
+        {
+            "id": 137,
+            "name": "test/test-fs-fd-hash.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-fs-fd-hash.c",
+            "Functionality": "This test file focuses on verifying the functionality of file descriptor hash tables in libuv, ensuring correct management of file descriptors across various system calls and operations, with specific attention to edge cases.",
+            "color": "green"
+        },
+        {
+            "id": 138,
+            "name": "test/test-timer-from-check.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-timer-from-check.c",
+            "Functionality": "This file tests the interaction between different types of libuv timers (`uv_timer_t`, `uv_prepare_t`, `uv_check_t`) to verify their behavior when they are set and triggered sequentially within the event loop.",
+            "color": "green"
+        },
+        {
+            "id": 139,
+            "name": "test/test-getaddrinfo.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-getaddrinfo.c",
+            "Functionality": "This file tests the behavior of libuv's DNS resolution API, specifically the `getaddrinfo()` function. It verifies that domain names are resolved correctly into IP addresses and that the results match expected outcomes.",
+            "color": "green"
+        },
+        {
+            "id": 140,
+            "name": "test/test-tcp-create-socket-early.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-create-socket-early.c",
+            "Functionality": "This test examines the behavior of TCP socket creation before the actual connection is established. It ensures that socket creation and initialization processes work as expected, and it tests scenarios where sockets are created but not immediately used for communication.",
+            "color": "green"
+        },
+        {
+            "id": 141,
+            "name": "test/test-tcp-open.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-open.c",
+            "Functionality": "This test validates the behavior of the `uv_tcp_open()` function. It ensures that a TCP socket is successfully bound and opened, allowing for connections to be made or accepted properly. It checks various edge cases in socket opening and address binding.",
+            "color": "green"
+        },
+        {
+            "id": 142,
+            "name": "test/test-thread-equal.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-thread-equal.c",
+            "Functionality": "This test case focuses on verifying the behavior of libuv\u9225\u6a9a `uv_thread_equal` function, which checks if the current thread is equal to a specified thread. The tests ensure that threads are correctly compared and proper behavior is maintained in multithreaded scenarios.",
+            "color": "green"
+        },
+        {
+            "id": 143,
+            "name": "test/test-ip-name.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-ip-name.c",
+            "Functionality": "This file tests the `uv_ip_name` function, which converts an IP address to a human-readable name. It ensures correct functionality for both IPv4 and IPv6 addresses in various test cases.",
+            "color": "green"
+        },
+        {
+            "id": 144,
+            "name": "test/test-readable-on-eof.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-readable-on-eof.c",
+            "Functionality": "This test file verifies the behavior of streams when EOF (End Of File) is reached. It checks whether the stream can still be read after receiving an EOF signal, ensuring correct handling of stream closure and continuation of data flow in a proper manner.",
+            "color": "green"
+        },
+        {
+            "id": 146,
+            "name": "test/test-tcp-close-while-connecting.c",
+            "category": "item",
+            "parentId": 3,
+            "qualifiedName": "3.libuv Network and Event Loop Test Suite.test/test-tcp-close-while-connecting.c",
+            "Functionality": "This file tests the behavior of TCP connections when the server closes the connection while the client is still attempting to connect. It verifies that libuv handles this situation by triggering appropriate error callbacks (e.g., `ECONNREFUSED`) and cleans up resources.",
+            "color": "green"
+        },
+        {
+            "id": 148,
+            "name": "docs/code/spawn/main.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.docs/code/spawn/main.c",
+            "Functionality": "Handles process spawning, including creating new processes, managing their execution, and ensuring synchronization and communication between parent and child processes. This ensures smooth multitasking and process management.",
+            "color": "green"
+        },
+        {
+            "id": 152,
+            "name": "test/test-udp-send-and-recv.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-udp-send-and-recv.c",
+            "Functionality": "This file focuses on the basic functionality of sending and receiving UDP datagrams. It tests the `uv_udp_send()` and `uv_udp_recv()` functions for ensuring that data is properly transmitted and received over UDP sockets.",
+            "color": "green"
+        },
+        {
+            "id": 153,
+            "name": "test/test-udp-multicast-join6.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-udp-multicast-join6.c",
+            "Functionality": "This test extends the previous multicast functionality tests to IPv6. It ensures that `libuv` correctly joins and leaves multicast groups over IPv6 addresses and handles reception of multicast packets.",
+            "color": "green"
+        },
+        {
+            "id": 154,
+            "name": "src/unix/darwin-proctitle.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/darwin-proctitle.c",
+            "Functionality": "Handles process title manipulation and related functionalities on Darwin-based (macOS) systems, allowing changes to process names for debugging or informational purposes.",
+            "color": "green"
+        },
+        {
+            "id": 156,
+            "name": "test/test-udp-open.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-udp-open.c",
+            "Functionality": "This file tests the UDP socket opening functionality, checking how the library handles socket initialization, binding, and interaction with the underlying OS-specific UDP stack. The test ensures proper handling of edge cases when opening UDP sockets.",
+            "color": "green"
+        },
+        {
+            "id": 158,
+            "name": "test/test-pass-always.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-pass-always.c",
+            "Functionality": "This is a basic test file that always passes. It is often used as a placeholder or as part of the testing framework to ensure that the environment is correctly set up and functioning.",
+            "color": "green"
+        },
+        {
+            "id": 159,
+            "name": "include/uv/bsd.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.include/uv/bsd.h",
+            "Functionality": "Platform-specific header for BSD-based systems, including macOS and FreeBSD, defining necessary macros and structures to interact with the system\u9225\u6a9a event loop.",
+            "color": "green"
+        },
+        {
+            "id": 160,
+            "name": "src/unix/darwin-stub.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/darwin-stub.h",
+            "Functionality": "This file contains placeholder functions and definitions specific to macOS (Darwin) systems, typically for managing system resources like file descriptors, event loops, and other platform-specific operations.",
+            "color": "green"
+        },
+        {
+            "id": 161,
+            "name": "test/test-pipe-connect-prepare.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-pipe-connect-prepare.c",
+            "Functionality": "Tests the preparation of a pipe connection using `uv_prepare_t` alongside `uv_pipe_connect`. This test verifies that the system handles the preparation phase of a connection correctly, including starting and stopping the prepare handle, which is useful for non-blocking connections.",
+            "color": "green"
+        },
+        {
+            "id": 162,
+            "name": "test/test-emfile.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-emfile.c",
+            "Functionality": "This file tests libuv's behavior when the system file descriptor limit is reached (EMFILE). It ensures that libuv handles this situation correctly, specifically testing the connection attempts and resource management when the file descriptor limit is exceeded.",
+            "color": "green"
+        },
+        {
+            "id": 163,
+            "name": "include/uv/errno.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.include/uv/errno.h",
+            "Functionality": "Defines error codes and mappings for error handling across different platforms, ensuring compatibility with Unix and Windows error handling conventions.",
+            "color": "green"
+        },
+        {
+            "id": 164,
+            "name": "test/test-tcp-close-reset.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-tcp-close-reset.c",
+            "Functionality": "This file tests the handling of TCP connection resets and closures. It verifies that libuv properly handles connection resets (e.g., when a client abruptly closes the connection) and ensures that the server can recover and close the connection gracefully.",
+            "color": "green"
+        },
+        {
+            "id": 165,
+            "name": "src/unix/os390-syscalls.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/os390-syscalls.h",
+            "Functionality": "This file provides system call interfaces specific to OS/390 (a mainframe platform), facilitating operations on file systems, processes, and other system-level tasks unique to this platform.",
+            "color": "green"
+        },
+        {
+            "id": 166,
+            "name": "src/unix/os390-syscalls.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/os390-syscalls.c",
+            "Functionality": "This file contains system call implementations specific to OS/390, ensuring that low-level operations such as file handling, process management, and memory management are carried out correctly on this platform.",
+            "color": "green"
+        },
+        {
+            "id": 168,
+            "name": "test/test-default-loop-close.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-default-loop-close.c",
+            "Functionality": "This file tests the closing of the default event loop in libuv. It ensures that the event loop and associated resources are properly cleaned up after the loop finishes execution, with tests for proper callback handling during shutdown.",
+            "color": "green"
+        },
+        {
+            "id": 169,
+            "name": "src/unix/spinlock.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/spinlock.h",
+            "Functionality": "Defines a simple spinlock mechanism used for synchronization in multi-threaded environments. It ensures that only one thread can access shared resources at a time, using busy-waiting to acquire the lock.",
+            "color": "yellow"
+        },
+        {
+            "id": 171,
+            "name": "test/test-process-priority.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-process-priority.c",
+            "Functionality": "Tests the ability to get and set process priority using `uv_os_getpriority` and `uv_os_setpriority`. This is useful for ensuring that libuv interacts correctly with the operating system's process scheduling mechanisms and that process priorities are respected during execution.",
+            "color": "green"
+        },
+        {
+            "id": 172,
+            "name": "include/uv/darwin.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.include/uv/darwin.h",
+            "Functionality": "Defines platform-specific implementations and structures for macOS, a Unix-based system, tailored for libuv functionality.",
+            "color": "green"
+        },
+        {
+            "id": 173,
+            "name": "src/idna.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/idna.h",
+            "Functionality": "This file contains functions for handling Internationalized Domain Names (IDN), focusing on the conversion between UTF-8 encoded domain names and ASCII-compatible encoding (ACE), as per the IDNA standard.",
+            "color": "green"
+        },
+        {
+            "id": 174,
+            "name": "src/idna.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/idna.c",
+            "Functionality": "Handles Internationalized Domain Names (IDN), converting Unicode domain names into ASCII-compatible encoding (ACE). This is crucial for supporting non-ASCII characters in domain names and ensuring compatibility with DNS systems.",
+            "color": "green"
+        },
+        {
+            "id": 175,
+            "name": "test/test-metrics.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-metrics.c",
+            "Functionality": "This test case evaluates the event loop's metrics capabilities, specifically measuring idle time. It verifies that libuv correctly tracks idle time in different loop configurations and ensures that the reported idle time aligns with expectations.",
+            "color": "green"
+        },
+        {
+            "id": 176,
+            "name": "src/unix/atomic-ops.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/atomic-ops.h",
+            "Functionality": "This file provides atomic operations specific to Unix-based platforms, ensuring thread-safe updates to shared data structures. It includes low-level atomic instructions for synchronization across threads.",
+            "color": "yellow"
+        },
+        {
+            "id": 178,
+            "name": "test/test-timer.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-timer.c",
+            "Functionality": "This file tests various functionalities of libuv's `uv_timer_t` timers. It verifies the creation, scheduling, and behavior of one-shot and repeated timers, and checks that they trigger at expected intervals and in the correct order.",
+            "color": "green"
+        },
+        {
+            "id": 180,
+            "name": "docs/code/uvtee/main.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.docs/code/uvtee/main.c",
+            "Functionality": "Provides functionality for redirecting output to both standard output (stdout) and a file or stream simultaneously. This is useful for logging or debugging while maintaining the regular output flow.",
+            "color": "green"
+        },
+        {
+            "id": 182,
+            "name": "src/unix/linux-syscalls.h",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/linux-syscalls.h",
+            "Functionality": "Defines Linux-specific system call wrappers, including low-level functions for interacting with system resources such as file descriptors, processes, and networking. It abstracts direct syscalls for platform compatibility.",
+            "color": "yellow"
+        },
+        {
+            "id": 183,
+            "name": "src/unix/linux-syscalls.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.src/unix/linux-syscalls.c",
+            "Functionality": "This file provides wrappers and implementations for Linux-specific system calls, allowing the application to interact with the kernel for functionalities like process management, I/O operations, and file handling.",
+            "color": "yellow"
+        },
+        {
+            "id": 184,
+            "name": "docs/code/tty/main.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.docs/code/tty/main.c",
+            "Functionality": "Handles terminal (TTY) communication, managing user input and output via the terminal interface. It facilitates interaction with users through command-line interfaces, reading input and sending output to the terminal.",
+            "color": "green"
+        },
+        {
+            "id": 185,
+            "name": "test/test-udp-multicast-interface.c",
+            "category": "item",
+            "parentId": 8,
+            "qualifiedName": "8.System and Network Utilities.test/test-udp-multicast-interface.c",
+            "Functionality": "This test checks the ability of `libuv` to join and leave a multicast group and receive multicast packets on a specific network interface. It validates UDP multicast operations in a typical use case.",
+            "color": "green"
+        },
+        {
+            "id": 186,
+            "name": "test/test-tcp-shutdown-after-write.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-tcp-shutdown-after-write.c",
+            "Functionality": "This test examines the behavior of the `shutdown()` function after data has been written to a TCP socket. It ensures that the application can safely shut down the connection, sending a graceful shutdown signal after data transmission.",
+            "color": "green"
+        },
+        {
+            "id": 187,
+            "name": "test/test-run-once.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-run-once.c",
+            "Functionality": "This file tests the event loop's behavior when using `uv_run` to execute only a single iteration of the loop. It ensures that the loop runs exactly once, processes queued events, and behaves as expected when only one pass through the loop is required.",
+            "color": "green"
+        },
+        {
+            "id": 188,
+            "name": "test/test-not-writable-after-shutdown.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-not-writable-after-shutdown.c",
+            "Functionality": "This test case verifies that after a socket is shut down using `uv_shutdown()`, it becomes non-writable. It ensures that no more data can be written to the socket once the shutdown process is initiated.",
+            "color": "green"
+        },
+        {
+            "id": 190,
+            "name": "include/uv/version.h",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.include/uv/version.h",
+            "Functionality": "Defines the versioning information for the libuv library, including major, minor, and patch version numbers for proper version control and tracking.",
+            "color": "green"
+        },
+        {
+            "id": 191,
+            "name": "docs/code/uvcat/main.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.docs/code/uvcat/main.c",
+            "Functionality": "A utility tool for handling file operations, potentially reading from and writing to files, manipulating file data, or working with file systems in a user-friendly manner, using the 'uv' framework for non-blocking I/O.",
+            "color": "green"
+        },
+        {
+            "id": 192,
+            "name": "test/test-connect-unspecified.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-connect-unspecified.c",
+            "Functionality": "This file tests the behavior of connecting to unspecified addresses, such as `0.0.0.0` or `::`, ensuring that the connection is handled correctly by libuv's TCP functionality even when the address is not fully specified.",
+            "color": "green"
+        },
+        {
+            "id": 193,
+            "name": "test/test-tcp-connect-timeout.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-tcp-connect-timeout.c",
+            "Functionality": "This file tests the handling of TCP connection timeouts. It ensures that if a connection attempt times out (e.g., due to network unavailability), the timeout is handled correctly, and appropriate error handling and resource cleanup are performed.",
+            "color": "green"
+        },
+        {
+            "id": 194,
+            "name": "include/uv/unix.h",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.include/uv/unix.h",
+            "Functionality": "Contains Unix-specific macros and structures to ensure compatibility with Unix-like systems, supporting libuv\u9225\u6a9a cross-platform asynchronous I/O functionality.",
+            "color": "green"
+        },
+        {
+            "id": 195,
+            "name": "test/test-threadpool.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-threadpool.c",
+            "Functionality": "This file tests the operations related to the thread pool in libuv, focusing on task scheduling, concurrency, and the management of thread resources. It ensures that tasks are handled efficiently and the system behaves correctly under concurrent loads.",
+            "color": "green"
+        },
+        {
+            "id": 196,
+            "name": "test/test-udp-send-hang-loop.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-udp-send-hang-loop.c",
+            "Functionality": "This file tests the behavior of UDP sends in a loop, checking if the program experiences any blocking or hang scenarios. It verifies that sending a large number of datagrams does not cause the system to hang or block indefinitely.",
+            "color": "green"
+        },
+        {
+            "id": 197,
+            "name": "test/test-get-passwd.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-get-passwd.c",
+            "Functionality": "This test file is used to verify the `uv_os_get_passwd()` function, which retrieves user account information. It ensures that the function properly handles retrieving the current user\u9225\u6a9a data such as username, home directory, and shell.",
+            "color": "green"
+        },
+        {
+            "id": 198,
+            "name": "test/test-poll-oob.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-poll-oob.c",
+            "Functionality": "Tests the handling of out-of-band (OOB) data in a poll loop. The test checks that the system correctly detects and processes OOB data using the `UV_PRIORITIZED` event type, which is important for handling urgent or special data transmissions over sockets.",
+            "color": "green"
+        },
+        {
+            "id": 199,
+            "name": "test/test-dlerror.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-dlerror.c",
+            "Functionality": "This file tests the error handling when dynamically loading shared libraries. It verifies that errors such as invalid library loading are captured correctly using libuv's `uv_dlerror` function, ensuring that error messages are properly returned.",
+            "color": "green"
+        },
+        {
+            "id": 200,
+            "name": "src/win/atomicops-inl.h",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.src/win/atomicops-inl.h",
+            "Functionality": "This file defines inline functions for atomic operations in a Windows environment. It provides thread-safe operations for managing shared data and synchronization in multithreaded applications.",
+            "color": "green"
+        },
+        {
+            "id": 201,
+            "name": "src/unix/fsevents.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.src/unix/fsevents.c",
+            "Functionality": "This file manages file system event monitoring, specifically for systems that support file system event notification (like macOS). It facilitates the detection of changes to files and directories, enabling applications to respond to file modifications or movements in real time.",
+            "color": "green"
+        },
+        {
+            "id": 204,
+            "name": "include/uv/tree.h",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.include/uv/tree.h",
+            "Functionality": "Defines tree data structures, such as Red-Black and Splay Trees, used for efficient data management and sorting within libuv.",
+            "color": "green"
+        },
+        {
+            "id": 205,
+            "name": "test/test-pipe-pending-instances.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-pipe-pending-instances.c",
+            "Functionality": "Tests the behavior of the `uv_pipe_t` handle with pending instances. It ensures that the system correctly handles the queue of pending connections and that no connections are dropped or mishandled, simulating scenarios where there are multiple incoming pipe connections waiting to be accepted.",
+            "color": "green"
+        },
+        {
+            "id": 206,
+            "name": "test/test-tty-duplicate-key.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-tty-duplicate-key.c",
+            "Functionality": "This test case focuses on simulating key events in a terminal and ensuring that duplicate or repeated key presses are handled correctly. It helps verify the robustness of terminal input handling and the interaction with the system console.",
+            "color": "green"
+        },
+        {
+            "id": 207,
+            "name": "test/test-shutdown-eof.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-shutdown-eof.c",
+            "Functionality": "This file tests the shutdown behavior of connections when EOF is received. It verifies that the connection behaves correctly when an EOF signal is triggered, ensuring that the socket is properly closed and that no further data is attempted to be read from the closed connection.",
+            "color": "green"
+        },
+        {
+            "id": 208,
+            "name": "test/test-shutdown-simultaneous.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-shutdown-simultaneous.c",
+            "Functionality": "This file tests the simultaneous shutdown of multiple connections in libuv. It ensures that multiple shutdown operations can be performed concurrently without causing race conditions, crashes, or deadlocks, while ensuring that each connection is closed in a well-defined manner.",
+            "color": "green"
+        },
+        {
+            "id": 209,
+            "name": "test/test-ipc-heavy-traffic-deadlock-bug.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-ipc-heavy-traffic-deadlock-bug.c",
+            "Functionality": "This file is designed to test and reproduce a potential bug related to deadlocks in inter-process communication (IPC) when there is heavy traffic. It ensures that the IPC mechanisms do not encounter deadlocks under stress conditions.",
+            "color": "green"
+        },
+        {
+            "id": 210,
+            "name": "test/test-shutdown-close.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-shutdown-close.c",
+            "Functionality": "This test file validates the shutdown and close functionality in libuv, ensuring that shutdown operations on network handles (like TCP) are correctly triggered and that subsequent close operations do not result in undefined behavior or resource leaks.",
+            "color": "green"
+        },
+        {
+            "id": 212,
+            "name": "test/test-tcp-bind6-error.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-tcp-bind6-error.c",
+            "Functionality": "This file tests the error handling when binding a TCP server to an IPv6 address. It covers scenarios where the address is unavailable or there are other binding errors, ensuring that these conditions are correctly handled and appropriate errors are raised.",
+            "color": "green"
+        },
+        {
+            "id": 213,
+            "name": "test/test-pipe-connect-error.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-pipe-connect-error.c",
+            "Functionality": "This test file examines the error handling behavior when attempting to connect to a pipe address that is invalid or unavailable. It ensures that appropriate error codes are returned and that the system behaves as expected in such scenarios.",
+            "color": "green"
+        },
+        {
+            "id": 214,
+            "name": "test/test-random.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-random.c",
+            "Functionality": "This file tests the behavior of the `uv_random` function in libuv. It includes both asynchronous and synchronous tests to ensure that the random number generation works correctly and returns valid, unpredictable results across multiple calls.",
+            "color": "green"
+        },
+        {
+            "id": 215,
+            "name": "test/test-tcp-read-stop.c",
+            "category": "item",
+            "parentId": 11,
+            "qualifiedName": "11.libuv Network & I/O Test Suite.test/test-tcp-read-stop.c",
+            "Functionality": "This test validates the `uv_read_stop()` function in the context of a TCP connection. It ensures that stopping the read operation functions correctly and that no further data is read once it is stopped, while the socket connection remains intact.",
+            "color": "green"
+        },
+        {
+            "id": 218,
+            "name": "docs/code/onchange/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/onchange/main.c",
+            "color": "green"
+        },
+        {
+            "id": 219,
+            "name": "test/test-pipe-server-close.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-pipe-server-close.c",
+            "Functionality": "Verifies the behavior of closing the server side of a pipe connection. The test ensures that the server can properly close its end of the pipe without affecting the client side, testing correct shutdown handling and resource cleanup.",
+            "color": "green"
+        },
+        {
+            "id": 220,
+            "name": "test/test-loop-stop.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-loop-stop.c",
+            "Functionality": "This test file validates the behavior of stopping the event loop in libuv. It ensures that the loop can be stopped correctly and that no additional operations occur once the loop has been stopped. It also verifies proper cleanup and the final state of the loop.",
+            "color": "green"
+        },
+        {
+            "id": 221,
+            "name": "test/test-loop-handles.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-loop-handles.c",
+            "Functionality": "This file tests various event loop handles, such as `uv_prepare`, `uv_check`, and `uv_idle`, and ensures their proper functioning within the event loop. It focuses on how different handle types interact within the loop, such as the order of execution and correct handling of callback invocations.",
+            "color": "green"
+        },
+        {
+            "id": 222,
+            "name": "include/uv/aix.h",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.include/uv/aix.h",
+            "Functionality": "Platform-specific header for AIX operating systems, defining necessary macros and structures for compatibility with libuv.",
+            "color": "green"
+        },
+        {
+            "id": 225,
+            "name": "test/test-idle.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-idle.c",
+            "Functionality": "This file tests the behavior of `uv_idle_t` handles in libuv. It verifies that idle handles are triggered correctly in the event loop, and tests the proper handling of idle and check handles in different scenarios.",
+            "color": "green"
+        },
+        {
+            "id": 227,
+            "name": "test/test-udp-options.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-udp-options.c",
+            "Functionality": "This test verifies the configuration of UDP socket options, including broadcast, TTL, and multicast loop settings. It ensures that the library can correctly set and retrieve socket options for UDP sockets.",
+            "color": "green"
+        },
+        {
+            "id": 228,
+            "name": "test/test-tcp-alloc-cb-fail.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-tcp-alloc-cb-fail.c",
+            "Functionality": "This file tests the behavior of the TCP connection when the buffer allocation callback fails. It ensures that when the allocation for reading data fails, the connection is handled correctly, and proper error handling is invoked.",
+            "color": "green"
+        },
+        {
+            "id": 230,
+            "name": "test/test-tmpdir.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-tmpdir.c",
+            "Functionality": "This file contains a test for the `uv_os_tmpdir` function, which returns the system's temporary directory. The test ensures that the function works correctly across different platforms and that it returns a valid path to the temporary directory.",
+            "color": "green"
+        },
+        {
+            "id": 231,
+            "name": "docs/code/plugin/hello.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/plugin/hello.c",
+            "color": "green"
+        },
+        {
+            "id": 233,
+            "name": "test/test-signal-pending-on-close.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-signal-pending-on-close.c",
+            "Functionality": "This test ensures that pending signals are correctly handled after a close operation is initiated. It verifies that when a handle is closed, any pending signals are properly processed, and that the signal state is correctly updated after the handle is shut down.",
+            "color": "green"
+        },
+        {
+            "id": 235,
+            "name": "docs/code/default-loop/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/default-loop/main.c",
+            "color": "green"
+        },
+        {
+            "id": 236,
+            "name": "docs/code/uvstop/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/uvstop/main.c",
+            "Functionality": "Implements the stopping mechanism for asynchronous operations, allowing the program to gracefully stop or terminate ongoing processes or tasks, often in an event-driven or concurrent environment.",
+            "color": "green"
+        },
+        {
+            "id": 237,
+            "name": "test/test-homedir.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-homedir.c",
+            "Functionality": "This file tests the `uv_os_homedir` function, which retrieves the current user's home directory. It ensures that the function returns the correct directory path across different operating systems.",
+            "color": "green"
+        },
+        {
+            "id": 238,
+            "name": "docs/code/signal/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/signal/main.c",
+            "Functionality": "Implements signal handling, allowing the program to manage and respond to signals like termination requests, interrupt signals, and other OS-generated signals for proper resource cleanup and graceful shutdown.",
+            "color": "green"
+        },
+        {
+            "id": 239,
+            "name": "test/test-gettimeofday.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-gettimeofday.c",
+            "Functionality": "This file tests the `uv_gettimeofday` function, which retrieves the current time in microseconds. The test verifies the accuracy and correctness of the function in different environments.",
+            "color": "green"
+        },
+        {
+            "id": 240,
+            "name": "test/test-udp-sendmmsg-error.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-udp-sendmmsg-error.c",
+            "Functionality": "This file tests the UDP socket operations in libuv, specifically focusing on the behavior of the `sendmmsg` function when errors occur. It verifies the handling of error scenarios during the sending of multiple UDP datagrams and checks for appropriate error responses such as connection refusal (UV_ECONNREFUSED) when certain conditions are met. The test ensures that the library handles UDP error scenarios robustly, maintains expected behavior, and ensures the proper closure of the UDP socket after sending operations.",
+            "color": "green"
+        },
+        {
+            "id": 241,
+            "name": "test/test-tcp-write-queue-order.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-tcp-write-queue-order.c",
+            "Functionality": "This test checks that the order of writes to a TCP socket is maintained in the send queue. It verifies that the data is sent in the correct order, even in the presence of multiple concurrent write operations.",
+            "color": "green"
+        },
+        {
+            "id": 242,
+            "name": "docs/code/plugin/plugin.h",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/plugin/plugin.h",
+            "Functionality": "Defines the interface for plugin systems, providing declarations and macros for registering plugins in the application.",
+            "color": "green"
+        },
+        {
+            "id": 243,
+            "name": "docs/code/plugin/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/plugin/main.c",
+            "color": "green"
+        },
+        {
+            "id": 244,
+            "name": "docs/code/detach/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/detach/main.c",
+            "color": "green"
+        },
+        {
+            "id": 245,
+            "name": "test/test-hrtime.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.test/test-hrtime.c",
+            "Functionality": "This file tests the `uv_hrtime` function, which provides high-resolution time in nanoseconds. It ensures that the function returns consistent and accurate time measurements, even after calls to `uv_sleep`.",
+            "color": "green"
+        },
+        {
+            "id": 246,
+            "name": "docs/code/idle-basic/main.c",
+            "category": "item",
+            "parentId": 15,
+            "qualifiedName": "15.Network and Event Loop Utilities.docs/code/idle-basic/main.c",
+            "color": "green"
+        },
+        {
+            "id": 253,
+            "name": "test/test-getters-setters.c",
+            "category": "item",
+            "parentId": 16,
+            "qualifiedName": "16.libuv Functionality Testing Suite.test/test-getters-setters.c",
+            "Functionality": "This file contains tests for various getter and setter functions in libuv. These functions allow the manipulation and retrieval of settings for different types of handles, and the tests ensure their proper operation.",
+            "color": "green"
+        },
+        {
+            "id": 332,
+            "name": "src/unix/epoll.c",
+            "category": "item",
+            "parentId": 17,
+            "qualifiedName": "17.Unix System Utilities and Asynchronous Operations.src/unix/epoll.c",
+            "Functionality": "This file implements the epoll-based event notification mechanism, specifically for Linux-based systems. It provides efficient handling of large numbers of file descriptors by utilizing epoll system calls, enabling asynchronous I/O operations and event-driven programming.",
+            "color": "yellow"
+        },
+        {
+            "id": 339,
+            "name": "src/unix/linux-inotify.c",
+            "category": "item",
+            "parentId": 17,
+            "qualifiedName": "17.Unix System Utilities and Asynchronous Operations.src/unix/linux-inotify.c",
+            "Functionality": "This file implements the inotify API for Linux, which allows programs to monitor file system events. It provides notifications for file and directory changes, such as modifications, deletions, and creations, enabling real-time file system monitoring.",
+            "color": "yellow"
+        },
+        {
+            "id": 347,
+            "name": "src/unix/os390.c",
+            "category": "item",
+            "parentId": 17,
+            "qualifiedName": "17.Unix System Utilities and Asynchronous Operations.src/unix/os390.c",
+            "Functionality": "This file includes general system-specific functionalities for OS/390, including process, thread, and memory management, along with other essential operating system functions, ensuring full compatibility with OS/390 systems.",
+            "color": "green"
+        },
+        {
+            "id": 349,
+            "name": "src/unix/linux-core.c",
+            "category": "item",
+            "parentId": 17,
+            "qualifiedName": "17.Unix System Utilities and Asynchronous Operations.src/unix/linux-core.c",
+            "Functionality": "This file contains the core Linux-specific implementation for system-level functionalities. It includes key components like process and thread management, asynchronous I/O, and system call interfaces specific to the Linux kernel.",
+            "color": "yellow"
+        },
+        {
+            "id": 358,
+            "name": "docs/code/proc-streams/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.docs/code/proc-streams/main.c",
+            "color": "green"
+        },
+        {
+            "id": 359,
+            "name": "docs/code/queue-cancel/main.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.docs/code/queue-cancel/main.c",
+            "color": "green"
+        },
+        {
+            "id": 360,
+            "name": "src/win/winapi.h",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.src/win/winapi.h",
+            "color": "green"
+        },
+        {
+            "id": 361,
+            "name": "src/win/stream-inl.h",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.src/win/stream-inl.h",
+            "color": "green"
+        },
+        {
+            "id": 362,
+            "name": "src/win/winsock.h",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.src/win/winsock.h",
+            "color": "green"
+        },
+        {
+            "id": 363,
+            "name": "src/win/winsock.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.src/win/winsock.c",
+            "color": "green"
+        },
+        {
+            "id": 364,
+            "name": "test/benchmark-ping-pongs.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.test/benchmark-ping-pongs.c",
+            "color": "green"
+        },
+        {
+            "id": 365,
+            "name": "test/benchmark-getaddrinfo.c",
+            "category": "item",
+            "parentId": 4,
+            "qualifiedName": "4.Network Stream and Performance Testing.test/benchmark-getaddrinfo.c",
+            "color": "green"
+        },
+        {
+            "id": 366,
+            "name": "docs/code/pipe-echo-server/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.Network Service and Compute Module.docs/code/pipe-echo-server/main.c",
+            "color": "green"
+        },
+        {
+            "id": 367,
+            "name": "docs/code/multi-echo-server/worker.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.Network Service and Compute Module.docs/code/multi-echo-server/worker.c",
+            "color": "green"
+        },
+        {
+            "id": 368,
+            "name": "docs/code/dns/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.Network Service and Compute Module.docs/code/dns/main.c",
+            "color": "green"
+        },
+        {
+            "id": 369,
+            "name": "docs/code/cgi/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.Network Service and Compute Module.docs/code/cgi/main.c",
+            "color": "green"
+        },
+        {
+            "id": 370,
+            "name": "docs/code/interfaces/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.Network Service and Compute Module.docs/code/interfaces/main.c",
+            "color": "green"
+        },
+        {
+            "id": 371,
+            "name": "docs/code/idle-compute/main.c",
+            "category": "item",
+            "parentId": 12,
+            "qualifiedName": "12.Network Service and Compute Module.docs/code/idle-compute/main.c",
+            "color": "green"
+        },
+        {
+            "id": 372,
+            "name": "test/benchmark-loop-count.c",
+            "category": "item",
+            "parentId": 13,
+            "qualifiedName": "13.LoopPerformanceTester.test/benchmark-loop-count.c",
+            "color": "green"
+        },
+        {
+            "id": 373,
+            "name": "test/benchmark-multi-accept.c",
+            "category": "item",
+            "parentId": 19,
+            "qualifiedName": "19.Multi-Accept Benchmark.test/benchmark-multi-accept.c",
+            "color": "green"
+        },
+        {
+            "id": 374,
+            "name": "test/benchmark-pound.c",
+            "category": "item",
+            "parentId": 5,
+            "qualifiedName": "5.libuv Fork Behavior Tester.test/benchmark-pound.c",
+            "color": "green"
+        },
+        {
+            "id": 375,
+            "name": "test/test-fork.c",
+            "category": "item",
+            "parentId": 9,
+            "qualifiedName": "9.MultiLoopSignalTest.test/test-fork.c",
+            "Functionality": "This file tests the behavior of libuv after a `fork()` system call, focusing on the handling of timers, sockets, file system events, and signals in both parent and child processes.",
+            "color": "green"
+        },
+        {
+            "id": 377,
+            "name": "test/test-stdio-over-pipes.c",
+            "category": "item",
+            "parentId": 6,
+            "qualifiedName": "6.UDP Connection Validation Module.test/test-stdio-over-pipes.c",
+            "Functionality": "This file tests the standard I/O redirection over pipes using libuv. It ensures that input and output streams are properly handled when redirected through pipes between processes, verifying that data can be read and written correctly.",
+            "color": "green"
+        },
+        {
+            "id": 378,
+            "name": "test/test-udp-connect.c",
+            "category": "item",
+            "parentId": 21,
+            "qualifiedName": "21.15.test/test-udp-connect.c",
+            "Functionality": "This test case verifies UDP socket connection behaviors, including connecting a UDP socket to a remote endpoint. It ensures that the socket can properly send and receive data after establishing a connection, and it checks for any issues with data flow or timeouts.",
+            "color": "green"
+        }
+    ]
+}

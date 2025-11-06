@@ -1,0 +1,16 @@
+[[libuv Network and Resource Management Test Suite]] --> [[libuv-platforms]]: 1619
+[[System Resource Management and Asynchronous I/O]] --> [[libuv-platforms]]: 761
+[[Libuv Core Functionality and Performance Testing]] --> [[libuv-platforms]]: 694
+[[libuv Functionality and Behavior Testing]] --> [[libuv-platforms]]: 672
+[[libuv-platforms]] --> [[Libuv Core Functionality and Performance Testing]]: 468
+[[libuv Error Handling and Event Loop Behavior Tests]] --> [[libuv-platforms]]: 286
+[[libuv Network and Resource Management Test Suite]] --> [[Libuv Core Functionality and Performance Testing]]: 238
+[[libuv-platforms]] --> [[System Resource Management and Asynchronous I/O]]: 188
+[[libuv Functionality and Behavior Testing]] --> [[Libuv Core Functionality and Performance Testing]]: 120
+[[libuv-platforms]] --> [[libuv Network and Resource Management Test Suite]]: 80
+[[libuv Error Handling and Event Loop Behavior Tests]] --> [[Libuv Core Functionality and Performance Testing]]: 38
+[[System Resource Management and Asynchronous I/O]] --> [[Libuv Core Functionality and Performance Testing]]: 35
+[[System Resource Management and Asynchronous I/O]] --> [[libuv Network and Resource Management Test Suite]]: 12
+[[Libuv Core Functionality and Performance Testing]] --> [[libuv Network and Resource Management Test Suite]]: 3
+[[libuv Network and Resource Management Test Suite]] --> [[System Resource Management and Asynchronous I/O]]: 1
+[[libuv Error Handling and Event Loop Behavior Tests]] --> [[System Resource Management and Asynchronous I/O]]: 1

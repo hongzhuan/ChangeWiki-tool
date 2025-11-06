@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HP-Socket" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HP-Socket-v3.1.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HP-Socket-v3.1.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PasteSpider-24.5.4.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PasteSpider-25.03.22" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/audioFlux-v0.1.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/audioFlux-v0.1.9" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bgslibrary-2.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bgslibrary-3.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bindfs-1.10" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bindfs-1.18.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cJSON-v1.0.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cJSON-v1.1.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cJSON-v1.4.6" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cJSON-v1.7.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cJSON-v1.7.17" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculator-release/2411" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculator-release/2501" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cef-5735" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cef-6834" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/curve-v0.1.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/curve-v0.2.0-beta" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jianshi-v1.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jianshi-v2.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv-v1.44.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv-v1.44.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv-v1.48.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv-v1.48.0/mksh-mksh-R20" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv-v1.48.0/mksh-mksh-R26" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv/libuv-v1.42.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv/libuv-v1.44.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv/libuv-v1.48.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv/libuv/libuv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libuv/libuv/libuv-v1.42.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libxml2-2.11" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libxml2-v2.10.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libxml2-v2.11.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libxml2-v2.14.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lnav-v0.11.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lnav-v0.9.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mksh-MIRBSD_4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mksh-MIRBSD_5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/musl-v0.5.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/musl-v0.6.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/redis-2.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/redis-2.4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/skia-chrome/m131" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/skia-chrome/m133" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/supersql-open-dev" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/supersql-open-master" vcs="Git" />
+  </component>
+</project>

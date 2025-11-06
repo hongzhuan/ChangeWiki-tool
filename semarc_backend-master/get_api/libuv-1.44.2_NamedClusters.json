@@ -1,0 +1,1470 @@
+{
+    "@schemaVersion": "1.0",
+    "name": "clustering",
+    "structure": [
+        {
+            "@type": "group",
+            "name": "libuv Network and Resource Management Test Suite",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-connect-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/stdint-msvc2008.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/heap-inl.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-emfile.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-options.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/posix.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-unexpected-read.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-write-after-connect.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pass-always.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-queue-foreach-delete.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-delayed-accept.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-spawn.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-loop-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-rst.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-set-non-blocking.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-alloc-cb-fail.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-try-write.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ip4-addr.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/tree.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-cwd-and-chdir.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-threadpool.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-send-unreachable.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/darwin-proctitle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-dlerror.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-create-socket-early.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ping-pong.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-test-macros.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-open.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-udp-pummel.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-strscpy.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/errno.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tty.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/sunos.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-idna.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-connect-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ip6-addr.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fail-always.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/threadpool.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-loop-time.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-alloc-cb-fail.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/atomicops-inl.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-pump.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ipc-heavy-traffic-deadlock-bug.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/atomic-ops.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-pending-instances.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-poll-closesocket.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-connect-unspecified.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-strtok.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/win.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-shutdown-simultaneous.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-getters-setters.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-sendmsg.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fork.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-close-accept.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-connection-fail.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-server-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/blackhole-server.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-tcp-write-batch.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ipc-send-recv.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/queue.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-close-reset.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-open.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/strscpy.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/strscpy.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-thread-equal.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/os390.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-signal-pending-on-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-multicast-join6.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/linux.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-poll-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-read-stop.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-handle-fileno.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-connect-error-after-write.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-write-queue-order.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-eintr-handling.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-multicast-interface6.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/pthread-fixes.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-write-fail.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-gethostname.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-bind-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/darwin.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/idna.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/idna.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/linux-syscalls.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/linux-syscalls.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-callback-stack.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/bsd.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-ipv6.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-connect6-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-connect-multiple.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-loop-configure.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-hrtime.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-socket-buffer-size.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-mmsg.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-random.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-poll-oob.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-getaddrinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-close-after-read-timeout.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-multicast-interface.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tty-duplicate-key.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-loop-handles.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-multicast-join.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-thread.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/darwin-stub.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-timer-again.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-embed.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs-open-flags.c"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "libuv-platforms",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "src/win/req-inl.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/udp-dhcp/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/runner-unix.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/proc-streams/test.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/idle-compute/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/multi-echo-server/worker.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-list.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/tcp-echo-server/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/internal.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/winapi.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/loop-watcher.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/signal.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/process-stdio.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/poll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/stream.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/pipe.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/core.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/async.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/getnameinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/process.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/fs.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/thread.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/util.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/fs-event.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/getaddrinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/detect-wakeup.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/tcp.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/dl.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/tty.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/udp.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/handle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-async.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-million-timers.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/uvstop/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/ref-timer/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/proc-streams/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/uv-common.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/core.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/loop.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/no-proctitle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/os390-proctitle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/sysinfo-memory.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/bsd-ifaddrs.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/aix.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/tty.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/getaddrinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/dl.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/bsd-proctitle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/ibmi.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/proctitle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/stream.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/cygwin.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/signal.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/sysinfo-loadavg.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/fs.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/haiku.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/getnameinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/qnx.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/procfs-exepath.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/tcp.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/hurd.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/plugin/plugin.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/plugin/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-pound.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs-readdir.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/cgi/tick.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-ping-udp.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/winsock.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/winsock.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/queue-work/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-fs-stat.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-env-vars.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-async-pummel.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/signal/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-million-async.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/tty-gravity/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/queue-cancel/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-getaddrinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/uvtee/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-platform-output.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/runner-win.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/progress/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/helloworld/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-uname.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/thread-create/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/detach/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/uvcat/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ref.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/spawn/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-ping-pongs.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/tty/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/winapi.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/idle-basic/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/interfaces/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/onchange/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/snprintf.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-walk-handles.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ipc.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/pipe-echo-server/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-list.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/dns/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/stream-inl.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-loop-count.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/cgi/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-try-send.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-spawn.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/default-loop/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/plugin/hello.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/uv-data-getter-setters.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/threadpool.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/uv-common.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/random.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/timer.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/fs-poll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/inet.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/version.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-multi-accept.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/uvwget/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/locks/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "docs/code/multi-echo-server/main.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-watcher-cross-stop.c"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "libuv Functionality and Behavior Testing",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "test/test-signal.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-shutdown-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-process-title.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-loop-alive.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-oob.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-osx-select.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-readable-on-eof.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-send-hang-loop.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-loop-stop.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tmpdir.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-send-immediate.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-async-null-cb.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-try-write-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-sendmmsg-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-poll-close-doesnt-corrupt-stack.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-process-title-threadsafe.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-getsockname.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-shutdown-eof.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-timer.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-bind6-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/unix.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-flags.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-timer-from-check.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs-fd-hash.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-connect-timeout.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-sizes.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-write-to-half-open-connection.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-shutdown-after-write.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/version.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-read-stop-start.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-dgram-too-big.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-ip-name.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-send-and-recv.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-async.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-multicast-ttl.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-threadpool-cancel.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-multiple-listen.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs-poll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-close-stdout-read-stdin.c"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "Libuv Core Functionality and Performance Testing",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-connect6.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-getsockname.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-connect.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-run-once.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/fs-fd-hash-inl.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-gettimeofday.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-udp-bind.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-thread.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-writealot.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-process-priority.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-get-passwd.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-not-writable-after-shutdown.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-homedir.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-getnameinfo.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/runner.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/task.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/runner-win.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/runner.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/runner-unix.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-close-while-connecting.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/echo-server.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-poll-multiple-handles.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/benchmark-queue-work.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/run-tests.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-close-fd.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/spinlock.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "include/uv/aix.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-active.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-default-loop-close.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-connect-prepare.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/strtok.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/strtok.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/win/handle-inl.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-metrics.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-create-socket-early.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/fsevents.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tty-escape-sequence-processing.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/run-benchmarks.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-close-order.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs-copyfile.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-pipe-set-fchmod.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-poll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-run-nowait.c"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "System Resource Management and Asynchronous I/O",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "test/test-get-memory.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-get-currentexe.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-barrier.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-condvar.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-get-loadavg.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-mutexes.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-semaphore.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-fs-event.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/os390-syscalls.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/os390-syscalls.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/internal.h"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/kqueue.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/posix-poll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/thread.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/freebsd.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/os390.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/linux-core.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/darwin.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/random-getrandom.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/udp.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/epoll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/random-devurandom.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/sunos.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/openbsd.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/poll.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/aix-common.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/async.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/netbsd.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/pipe.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/random-sysctl-linux.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/process.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/random-getentropy.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/linux-inotify.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/posix-hrtime.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/no-fsevents.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "src/unix/loop-watcher.c"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "libuv Error Handling and Event Loop Behavior Tests",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "test/test-not-readable-nor-writable-on-read-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-idle.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-tcp-bind-error.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-signal-multiple-loops.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-stdio-over-pipes.c"
+                },
+                {
+                    "@type": "item",
+                    "name": "test/test-shutdown-twice.c"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,163 @@
+{
+  "components": [
+    {
+      "name": "Scalability_and_Concurrent_Execution",
+      "elements": [
+        {
+          "name": "libuv_Testing_and_Benchmarking_Suite",
+          "color": "yellow"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Plugin_Management_and_Extensibility",
+      "elements": [
+        {
+          "name": "libuv_Functionality_and_Performance_Tests",
+          "color": "yellow"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Asynchronous_Task_Distribution_(Slaves)",
+      "elements": [
+        {
+          "name": "libuv_Core_and_Platform_Specific_Functionalities",
+          "color": "yellow"
+        },
+        {
+          "name": "libuv_Asynchronous_I_O_and_Multi_threading_Test_Suite",
+          "color": "red"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Benchmarking_and_Testing",
+      "elements": [
+        {
+          "name": "libuv_Functionality_Testing_Suite",
+          "color": "yellow"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Fault_Tolerance_and_Error_Handling",
+      "elements": [
+        {
+          "name": "libuv_Functionality_and_Behavior_Tests",
+          "color": "yellow"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Centralized_Event_Loop_(Master)",
+      "elements": [
+        {
+          "name": "libuv_Functional_and_Performance_Testing_Suite",
+          "color": "yellow"
+        },
+        {
+          "name": "Platform_Specific_I_O_and_System_Resource_Management_for_libuv",
+          "color": "red"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Platform_Specific_Implementations_(Distributed_Execution)",
+      "elements": [
+        {
+          "name": "libuv_Functionality_and_Performance_Testing",
+          "color": "red"
+        }
+      ],
+      "color": "red"
+    },
+    {
+      "name": "Thread_Pool_(Slaves)",
+      "color": "green",
+      "elements": [
+        {
+          "name": "libuv_Core_and_Platform_Specific_Functionalities",
+          "color": "green"
+        },
+        {
+          "name": "Platform_Specific_I_O_and_System_Resource_Management_for_libuv",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "name": "Plugin_System",
+      "color": "green",
+      "elements": [
+        {
+          "name": "libuv_Asynchronous_I_O_and_Multi_threading_Test_Suite",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "name": "Cross_Platform_Compatibility",
+      "color": "green",
+      "elements": [
+        {
+          "name": "libuv_Functionality_and_Performance_Testing_Suite",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "name": "Event_Loop_(Master)",
+      "color": "green",
+      "elements": []
+    },
+    {
+      "name": "Error_Handling",
+      "color": "green",
+      "elements": []
+    }
+  ],
+  "connections": [
+    {
+      "from": "libuv_Testing_and_Benchmarking_Suite",
+      "to": "libuv_Functionality_and_Behavior_Tests",
+      "hidden": true
+    },
+    {
+      "from": "libuv_Functionality_and_Performance_Tests",
+      "to": "libuv_Functionality_and_Behavior_Tests",
+      "hidden": true
+    },
+    {
+      "from": "libuv_Core_and_Platform_Specific_Functionalities",
+      "to": "libuv_Functionality_Testing_Suite",
+      "hidden": true
+    },
+    {
+      "from": "libuv_Functionality_Testing_Suite",
+      "to": "libuv_Functionality_and_Performance_Testing",
+      "hidden": true
+    },
+    {
+      "from": "libuv_Functionality_and_Behavior_Tests",
+      "to": "libuv_Asynchronous_I_O_and_Multi_threading_Test_Suite",
+      "hidden": true
+    },
+    {
+      "from": "Platform_Specific_I_O_and_System_Resource_Management_for_libuv",
+      "to": "libuv_Testing_and_Benchmarking_Suite",
+      "hidden": true
+    },
+    {
+      "from": "libuv_Functionality_and_Performance_Testing",
+      "to": "libuv_Testing_and_Benchmarking_Suite",
+      "hidden": true
+    }
+  ]
+}

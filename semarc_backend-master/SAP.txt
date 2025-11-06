@@ -1,0 +1,27 @@
+## layered pattern:
+
+The layered architecture pattern divides a system’s architecture into multiple layers, each performing a specific function. Each layer can only interact with the layer directly beneath it (vertical layering of services). The client communicates with the topmost layer of the system, which acts as the server to the next layer, and so on, continuing this process until reaching the final layer.
+
+In a typical layered architecture, layers are often divided into categories such as:
+
+Presentation Layer: Handles user interface and communication.
+Business Logic Layer: Contains the core business rules and logic.
+Persistence Layer: Manages data storage and retrieval.
+Database Layer: Stores data in databases.
+The exact number of layers may vary based on the complexity of the system. For example, smaller systems might only have three layers (presentation, business, and database), while larger, more complex systems may have more layers, such as separate layers for persistence logic or other concerns.
+
+In the layered architecture:
+
+The Presentation Layer interacts with the user but does not need to know how data is processed or stored.
+The Business Layer focuses on the logic specific to business operations and interacts with the persistence layer for data operations.
+The Persistence Layer manages data storage, retrieval, and operations such as queries or updates, independent of the business logic.
+Each layer abstracts the work of the layer below it, creating a clear separation of concerns. The layered architecture helps in maintaining modularity and ease of change since changes in one layer (like the database or presentation layer) do not directly impact others.
+
+## event-driven pattern:
+
+The event-driven architecture pattern is a popular distributed asynchronous architecture pattern used to produce highly scalable applications. It is also highly adaptable and can be used for small
+applications and as well as large, complex ones. The event-driven architecture is made up of highly decoupled, single-purpose event processing components that asynchronously receive and process
+events. 
+
+The event-driven architecture pattern consists of two main topologies, the mediator and the broker. The mediator topology is commonly used when you need to orchestrate multiple steps within an event through a central mediator, whereas the broker topology is used when you want to chain events together without the use of a central mediator. Because the architecture characteristics and implementation strategies differ between these two topologies, it is important to understand each one to know which is best suited for your particular situation.
+
